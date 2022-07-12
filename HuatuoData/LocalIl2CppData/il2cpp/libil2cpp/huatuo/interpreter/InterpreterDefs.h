@@ -27,7 +27,6 @@ namespace huatuo
 
 		union StackObject
 		{
-			uint64_t __u64;
 			void* ptr; // can't adjust position. will raise native_invoke init args bugs.
 			bool b;
 			int8_t i8;
@@ -45,7 +44,7 @@ namespace huatuo
 			Il2CppObject** ptrObj;
 		};
 
-		static_assert(sizeof(StackObject) == 8, "requrie 8 bytes");
+		static_assert(sizeof(StackObject) == 8, "requrie 64bit");
 
 
 		enum class ExceptionFlowType
@@ -112,7 +111,7 @@ namespace huatuo
 			uint32_t localVarBaseOffset;
 			uint32_t evalStackBaseOffset;
 			uint32_t localStackSize; // args + locals StackObject size
-			std::vector<uint64_t> resolveDatas;
+			std::vector<const void*> resolveDatas;
 			std::vector<InterpExceptionClause*> exClauses;
 			uint32_t isTrivialCopyArgs : 1;
 		};

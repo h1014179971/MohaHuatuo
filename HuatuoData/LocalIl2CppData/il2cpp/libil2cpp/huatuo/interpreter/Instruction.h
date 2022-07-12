@@ -713,17 +713,11 @@ namespace interpreter
 	struct IRInitLocals_n_2 : IRCommon
 	{
 		uint16_t size;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitLocals_n_4 : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
 		uint32_t size;
 	};
 
@@ -732,8 +726,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -741,8 +733,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -750,8 +740,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -759,8 +747,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -768,8 +754,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -785,18 +769,14 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRLdcVarConst_1 : IRCommon
 	{
-		uint8_t src;
-		uint8_t __pad3;
 		uint16_t dst;
-		uint8_t __pad6;
-		uint8_t __pad7;
+		uint8_t src;
+		uint8_t __pad__;
 	};
 
 
@@ -804,8 +784,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -819,10 +797,6 @@ namespace interpreter
 	struct IRLdcVarConst_8 : IRCommon
 	{
 		uint16_t dst;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		uint64_t src;
 	};
 
@@ -830,10 +804,6 @@ namespace interpreter
 	struct IRLdnullVar : IRCommon
 	{
 		uint16_t dst;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -841,8 +811,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -850,8 +818,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -859,8 +825,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -868,8 +832,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -877,8 +839,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -886,8 +846,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -895,8 +853,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -904,8 +860,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -913,8 +867,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -922,8 +874,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -931,8 +881,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -940,8 +888,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -949,8 +895,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -958,8 +902,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -967,8 +909,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -976,8 +916,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t size;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -985,8 +923,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t size;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1008,12 +944,7 @@ namespace interpreter
 
 	struct IRMemoryBarrier : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
+
 	};
 
 
@@ -1021,8 +952,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1030,8 +959,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1039,8 +966,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1048,8 +973,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1057,8 +980,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1066,8 +987,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1075,8 +994,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1084,8 +1001,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1093,8 +1008,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1102,8 +1015,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1111,8 +1022,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1120,8 +1029,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1129,8 +1036,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1138,8 +1043,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1147,8 +1050,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1156,8 +1057,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1165,8 +1064,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1174,8 +1071,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1183,8 +1078,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1192,8 +1085,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1201,8 +1092,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1210,8 +1099,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1219,8 +1106,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1228,8 +1113,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1237,8 +1120,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1246,8 +1127,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1255,8 +1134,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1264,8 +1141,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1273,8 +1148,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1282,8 +1155,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1291,8 +1162,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1300,8 +1169,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1309,8 +1176,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1318,8 +1183,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1327,8 +1190,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1336,8 +1197,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1345,8 +1204,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1354,8 +1211,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1363,8 +1218,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1372,8 +1225,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1381,8 +1232,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1390,8 +1239,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1399,8 +1246,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1408,8 +1253,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1417,8 +1260,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1426,8 +1267,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1435,8 +1274,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1444,8 +1281,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1453,8 +1288,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1462,8 +1295,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1471,8 +1302,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1480,8 +1309,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1489,8 +1316,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1498,8 +1323,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1507,8 +1330,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1516,8 +1337,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1525,8 +1344,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1534,8 +1351,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1543,8 +1358,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1552,8 +1365,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1561,8 +1372,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1570,8 +1379,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1579,8 +1386,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1588,8 +1393,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1597,8 +1400,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1606,8 +1407,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1615,8 +1414,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1624,8 +1421,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1633,8 +1428,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1642,8 +1435,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1651,8 +1442,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1660,8 +1449,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1669,8 +1456,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1678,8 +1463,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1687,8 +1470,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1696,8 +1477,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1705,8 +1484,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1714,8 +1491,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1723,8 +1498,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1732,8 +1505,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1741,8 +1512,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1750,8 +1519,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1759,8 +1526,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1768,8 +1533,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1777,8 +1540,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1786,8 +1547,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1795,8 +1554,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1804,8 +1561,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1813,8 +1568,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1822,8 +1575,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1831,8 +1582,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1840,8 +1589,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1849,8 +1596,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1858,8 +1603,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1867,8 +1610,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1876,8 +1617,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1885,8 +1624,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1894,8 +1631,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1903,8 +1638,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1912,8 +1645,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1921,8 +1652,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1930,8 +1659,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1939,8 +1666,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1948,8 +1673,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1957,8 +1680,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1966,8 +1687,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1975,8 +1694,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1984,8 +1701,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -1993,8 +1708,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2002,8 +1715,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2011,8 +1722,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2020,8 +1729,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2029,8 +1736,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2038,8 +1743,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2047,8 +1750,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2056,8 +1757,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2065,8 +1764,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2074,8 +1771,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2083,8 +1778,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2092,8 +1785,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2101,8 +1792,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2110,8 +1799,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2119,8 +1806,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2128,8 +1813,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2137,8 +1820,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2146,8 +1827,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2155,8 +1834,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2164,8 +1841,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2173,8 +1848,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2182,8 +1855,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2191,8 +1862,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2200,8 +1869,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2209,8 +1876,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2218,8 +1883,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2227,8 +1890,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2236,8 +1897,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2245,8 +1904,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2254,8 +1911,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2263,8 +1918,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2272,8 +1925,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2281,8 +1932,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2290,8 +1939,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2299,8 +1946,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2308,8 +1953,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2317,8 +1960,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2326,8 +1967,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2335,8 +1974,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2344,8 +1981,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2353,8 +1988,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2362,8 +1995,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2371,8 +2002,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2380,8 +2009,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2389,8 +2016,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2398,8 +2023,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2407,8 +2030,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2416,8 +2037,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2425,8 +2044,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2434,8 +2051,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2443,8 +2058,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2452,8 +2065,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2461,8 +2072,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2470,8 +2079,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2479,8 +2086,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2488,8 +2093,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2497,8 +2100,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2506,8 +2107,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2515,8 +2114,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2524,8 +2121,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2533,8 +2128,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2542,8 +2135,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2551,8 +2142,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2560,8 +2149,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2569,8 +2156,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2578,8 +2163,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2587,8 +2170,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2596,8 +2177,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2605,8 +2184,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2614,8 +2191,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2623,8 +2198,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2632,8 +2205,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2641,8 +2212,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2650,8 +2219,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2659,8 +2226,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2668,8 +2233,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2677,8 +2240,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2686,8 +2247,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2695,8 +2254,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2704,8 +2261,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2713,8 +2268,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2722,8 +2275,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2731,8 +2282,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2740,8 +2289,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2749,8 +2296,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2758,8 +2303,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2767,8 +2310,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2776,8 +2317,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2785,8 +2324,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2794,8 +2331,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2803,8 +2338,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -2812,8 +2345,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -3269,8 +2800,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -3278,8 +2807,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -3287,8 +2814,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -3296,8 +2821,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -3305,8 +2828,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -3314,28 +2835,18 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRCheckFiniteVar_f4 : IRCommon
 	{
 		uint16_t src;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRCheckFiniteVar_f8 : IRCommon
 	{
 		uint16_t src;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -3501,8 +3012,6 @@ namespace interpreter
 
 	struct IRBranchUncondition_4 : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
 		int32_t offset;
 	};
 
@@ -3539,13 +3048,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3553,13 +3056,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3567,13 +3064,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3581,13 +3072,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3595,13 +3080,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3609,13 +3088,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3623,13 +3096,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3637,13 +3104,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3651,13 +3112,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3665,13 +3120,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3679,13 +3128,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3693,13 +3136,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3707,13 +3144,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3721,13 +3152,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3735,13 +3160,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3749,13 +3168,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3763,13 +3176,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3777,13 +3184,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3791,13 +3192,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3805,13 +3200,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3819,13 +3208,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3833,13 +3216,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3847,13 +3224,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3861,13 +3232,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3875,13 +3240,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3889,13 +3248,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3903,13 +3256,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3917,13 +3264,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3931,13 +3272,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3945,13 +3280,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3959,13 +3288,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3973,13 +3296,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -3987,13 +3304,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4001,13 +3312,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4015,13 +3320,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4029,13 +3328,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4043,13 +3336,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4057,13 +3344,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4071,13 +3352,7 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4085,20 +3360,12 @@ namespace interpreter
 	{
 		uint16_t op1;
 		uint16_t op2;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRBranchJump : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
 		uint32_t token;
 	};
 
@@ -4108,18 +3375,14 @@ namespace interpreter
 		uint16_t value;
 		uint32_t caseNum;
 		uint32_t caseOffsets;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRNewClassVar : IRCommon
 	{
 		uint16_t obj;
-		uint32_t managed2NativeMethod;
-		uint32_t method;
+		void* managed2NativeMethod;
+		MethodInfo* method;
 		uint32_t argIdxs;
 	};
 
@@ -4127,22 +3390,22 @@ namespace interpreter
 	struct IRNewClassVar_Ctor_0 : IRCommon
 	{
 		uint16_t obj;
-		uint32_t method;
+		MethodInfo* method;
 	};
 
 
 	struct IRNewClassVar_NotCtor : IRCommon
 	{
 		uint16_t obj;
-		uint32_t klass;
+		Il2CppClass* klass;
 	};
 
 
 	struct IRNewValueTypeVar : IRCommon
 	{
 		uint16_t obj;
-		uint32_t managed2NativeMethod;
-		uint32_t method;
+		void* managed2NativeMethod;
+		MethodInfo* method;
 		uint32_t argIdxs;
 	};
 
@@ -4150,48 +3413,34 @@ namespace interpreter
 	struct IRNewClassInterpVar : IRCommon
 	{
 		uint16_t obj;
+		MethodInfo* method;
 		uint16_t argBase;
 		uint16_t argStackObjectNum;
 		uint16_t ctorFrameBase;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint32_t method;
 	};
 
 
 	struct IRNewClassInterpVar_Ctor_0 : IRCommon
 	{
 		uint16_t obj;
+		MethodInfo* method;
 		uint16_t ctorFrameBase;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t method;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRNewValueTypeInterpVar : IRCommon
 	{
 		uint16_t obj;
+		MethodInfo* method;
 		uint16_t argBase;
 		uint16_t argStackObjectNum;
 		uint16_t ctorFrameBase;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint32_t method;
 	};
 
 
 	struct IRAdjustValueTypeRefVar : IRCommon
 	{
 		uint16_t data;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4199,13 +3448,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -4213,113 +3456,67 @@ namespace interpreter
 	{
 		uint16_t resultMethod;
 		uint16_t obj;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t virtualMethod;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		MethodInfo* virtualMethod;
 	};
 
 
 	struct IRRetVar_ret_1 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_2 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_4 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_8 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_12 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_16 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_20 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_24 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_28 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRetVar_ret_32 : IRCommon
 	{
 		uint16_t ret;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4332,19 +3529,12 @@ namespace interpreter
 
 	struct IRRetVar_void : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
+
 	};
 
 
 	struct IRCallNative_void : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
@@ -4353,55 +3543,41 @@ namespace interpreter
 
 	struct IRCallNative_ret : IRCommon
 	{
-		uint16_t ret;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
+		uint16_t ret;
 	};
 
 
 	struct IRCallNative_ret_expand : IRCommon
 	{
-		uint8_t retLocationType;
-		uint8_t __pad3;
-		uint16_t ret;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
-		uint8_t __pad20;
-		uint8_t __pad21;
-		uint8_t __pad22;
-		uint8_t __pad23;
+		uint16_t ret;
+		uint8_t retLocationType;
+		uint8_t __pad__;
 	};
 
 
 	struct IRCallInterp_void : IRCommon
 	{
+		MethodInfo* methodInfo;
 		uint16_t argBase;
-		uint32_t methodInfo;
 	};
 
 
 	struct IRCallInterp_ret : IRCommon
 	{
+		MethodInfo* methodInfo;
 		uint16_t argBase;
 		uint16_t ret;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t methodInfo;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRCallVirtual_void : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
@@ -4410,55 +3586,41 @@ namespace interpreter
 
 	struct IRCallVirtual_ret : IRCommon
 	{
-		uint16_t ret;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
+		uint16_t ret;
 	};
 
 
 	struct IRCallVirtual_ret_expand : IRCommon
 	{
-		uint8_t retLocationType;
-		uint8_t __pad3;
-		uint16_t ret;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
-		uint8_t __pad20;
-		uint8_t __pad21;
-		uint8_t __pad22;
-		uint8_t __pad23;
+		uint16_t ret;
+		uint8_t retLocationType;
+		uint8_t __pad__;
 	};
 
 
 	struct IRCallInterpVirtual_void : IRCommon
 	{
+		MethodInfo* method;
 		uint16_t argBase;
-		uint32_t method;
 	};
 
 
 	struct IRCallInterpVirtual_ret : IRCommon
 	{
+		MethodInfo* method;
 		uint16_t argBase;
 		uint16_t ret;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t method;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRCallInd_void : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
@@ -4467,81 +3629,61 @@ namespace interpreter
 
 	struct IRCallInd_ret : IRCommon
 	{
-		uint16_t ret;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
+		uint16_t ret;
 	};
 
 
 	struct IRCallInd_ret_expand : IRCommon
 	{
-		uint8_t retLocationType;
-		uint8_t __pad3;
-		uint16_t ret;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		uint32_t managed2NativeMethod;
 		uint32_t methodInfo;
 		uint32_t argIdxs;
-		uint8_t __pad20;
-		uint8_t __pad21;
-		uint8_t __pad22;
-		uint8_t __pad23;
+		uint16_t ret;
+		uint8_t retLocationType;
+		uint8_t __pad__;
 	};
 
 
 	struct IRCallDelegate_void : IRCommon
 	{
-		uint16_t invokeParamCount;
 		uint32_t managed2NativeStaticMethod;
 		uint32_t managed2NativeInstanceMethod;
 		uint32_t argIdxs;
+		uint16_t invokeParamCount;
 	};
 
 
 	struct IRCallDelegate_ret : IRCommon
 	{
-		uint16_t ret;
-		uint16_t invokeParamCount;
-		uint8_t __pad6;
-		uint8_t __pad7;
 		uint32_t managed2NativeStaticMethod;
 		uint32_t managed2NativeInstanceMethod;
 		uint32_t argIdxs;
-		uint8_t __pad20;
-		uint8_t __pad21;
-		uint8_t __pad22;
-		uint8_t __pad23;
+		uint16_t ret;
+		uint16_t invokeParamCount;
 	};
 
 
 	struct IRCallDelegate_ret_expand : IRCommon
 	{
-		uint8_t retLocationType;
-		uint8_t __pad3;
-		uint16_t ret;
-		uint16_t invokeParamCount;
 		uint32_t managed2NativeStaticMethod;
 		uint32_t managed2NativeInstanceMethod;
 		uint32_t argIdxs;
-		uint8_t __pad20;
-		uint8_t __pad21;
-		uint8_t __pad22;
-		uint8_t __pad23;
+		uint16_t ret;
+		uint16_t invokeParamCount;
+		uint8_t retLocationType;
+		uint8_t __pad__;
 	};
 
 
 	struct IRNewDelegate : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t obj;
 		uint16_t method;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -4549,13 +3691,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -4563,13 +3699,7 @@ namespace interpreter
 	{
 		uint16_t addr;
 		uint16_t obj;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -4577,13 +3707,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t obj;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -4604,7 +3728,7 @@ namespace interpreter
 	struct IRLdtokenVar : IRCommon
 	{
 		uint16_t runtimeHandle;
-		uint32_t token;
+		void* token;
 	};
 
 
@@ -4612,13 +3736,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -4626,8 +3744,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t typedRef;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4635,13 +3751,7 @@ namespace interpreter
 	{
 		uint16_t addr;
 		uint16_t typedRef;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -4649,8 +3759,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4658,8 +3766,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4667,8 +3773,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4676,8 +3780,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4685,8 +3787,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4694,8 +3794,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4703,8 +3801,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4712,8 +3808,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4721,8 +3815,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4730,8 +3822,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4755,8 +3845,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4764,8 +3852,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4773,8 +3859,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4782,8 +3866,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4791,8 +3873,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4800,8 +3880,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4809,8 +3887,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4818,8 +3894,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4827,8 +3901,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4836,8 +3908,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4853,8 +3923,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4862,8 +3930,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4871,8 +3937,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4880,8 +3944,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4889,8 +3951,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4898,8 +3958,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4907,8 +3965,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4916,8 +3972,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4925,8 +3979,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4934,8 +3986,6 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t src;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -4950,100 +4000,60 @@ namespace interpreter
 	struct IRInitobjVar_1 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_2 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_4 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_8 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_12 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_16 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_20 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_24 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_28 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRInitobjVar_32 : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -5051,8 +4061,6 @@ namespace interpreter
 	{
 		uint16_t obj;
 		uint16_t size;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -5196,12 +4204,6 @@ namespace interpreter
 		uint16_t obj;
 		uint16_t offset;
 		uint16_t size;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -5211,10 +4213,6 @@ namespace interpreter
 		uint16_t obj;
 		uint16_t offset;
 		uint32_t size;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -5344,12 +4342,6 @@ namespace interpreter
 		uint16_t obj;
 		uint16_t offset;
 		uint16_t size;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -5359,10 +4351,6 @@ namespace interpreter
 		uint16_t obj;
 		uint16_t offset;
 		uint32_t size;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -5500,12 +4488,6 @@ namespace interpreter
 		uint16_t offset;
 		uint16_t data;
 		uint16_t size;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -5515,477 +4497,281 @@ namespace interpreter
 		uint16_t offset;
 		uint16_t data;
 		uint32_t size;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_i1 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_u1 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_i2 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_u2 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_i4 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_u4 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_i8 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_u8 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_size_8 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_size_12 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_size_16 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_size_20 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_size_24 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_size_28 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_size_32 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_n_2 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t size;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldVarVar_n_4 : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
 		uint32_t size;
 	};
 
 
 	struct IRStsfldVarVar_i1 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_u1 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_i2 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_u2 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_i4 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_u4 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_i8 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_u8 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_size_8 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_size_12 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_size_16 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_size_20 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_size_24 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_size_28 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_size_32 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_n_2 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
 		uint16_t size;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStsfldVarVar_n_4 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
 		uint32_t size;
 	};
 
@@ -5993,231 +4779,159 @@ namespace interpreter
 	struct IRLdsfldaVarVar : IRCommon
 	{
 		uint16_t dst;
+		Il2CppClass* klass;
 		uint16_t offset;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdsfldaFromFieldDataVarVar : IRCommon
 	{
 		uint16_t dst;
-		uint32_t src;
+		void* src;
 	};
 
 
 	struct IRLdthreadlocalaVarVar : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_i1 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_u1 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_i2 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_u2 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_i4 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_u4 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_i8 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_u8 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_size_8 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_size_12 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_size_16 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_size_20 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_size_24 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_size_28 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_size_32 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRLdthreadlocalVarVar_n_2 : IRCommon
 	{
 		uint16_t dst;
-		uint16_t size;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
+		uint16_t size;
 	};
 
 
 	struct IRLdthreadlocalVarVar_n_4 : IRCommon
 	{
 		uint16_t dst;
-		uint32_t klass;
+		Il2CppClass* klass;
 		int32_t offset;
 		uint32_t size;
 	};
@@ -6225,234 +4939,138 @@ namespace interpreter
 
 	struct IRStthreadlocalVarVar_i1 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_u1 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_i2 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_u2 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_i4 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_u4 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_i8 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_u8 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_size_8 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_size_12 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_size_16 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_size_20 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_size_24 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_size_28 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_size_32 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_n_2 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
 		uint16_t size;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
 	struct IRStthreadlocalVarVar_n_4 : IRCommon
 	{
+		Il2CppClass* klass;
 		uint16_t offset;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
 		uint32_t size;
 	};
 
@@ -6461,13 +5079,7 @@ namespace interpreter
 	{
 		uint16_t arr;
 		uint16_t size;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -6475,13 +5087,7 @@ namespace interpreter
 	{
 		uint16_t arr;
 		uint16_t size;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -6489,8 +5095,6 @@ namespace interpreter
 	{
 		uint16_t len;
 		uint16_t arr;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -6498,8 +5102,6 @@ namespace interpreter
 	{
 		uint16_t len;
 		uint16_t arr;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -6524,11 +5126,7 @@ namespace interpreter
 		uint16_t addr;
 		uint16_t arr;
 		uint16_t index;
-		uint32_t eleKlass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* eleKlass;
 	};
 
 
@@ -6537,11 +5135,7 @@ namespace interpreter
 		uint16_t addr;
 		uint16_t arr;
 		uint16_t index;
-		uint32_t eleKlass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* eleKlass;
 	};
 
 
@@ -6917,13 +5511,7 @@ namespace interpreter
 	{
 		uint16_t arr;
 		uint16_t lengthIdxs;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -6932,11 +5520,7 @@ namespace interpreter
 		uint16_t arr;
 		uint16_t lengthIdxs;
 		uint16_t lowerBoundIdxs;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -7031,28 +5615,17 @@ namespace interpreter
 	struct IRThrowEx : IRCommon
 	{
 		uint16_t exceptionObj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IRRethrowEx : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
+
 	};
 
 
 	struct IRLeaveEx : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
 		int32_t offset;
 	};
 
@@ -7060,21 +5633,12 @@ namespace interpreter
 	struct IREndFilterEx : IRCommon
 	{
 		uint16_t value;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
 	struct IREndFinallyEx : IRCommon
 	{
-		uint8_t __pad2;
-		uint8_t __pad3;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
+
 	};
 
 
@@ -7082,13 +5646,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -7096,13 +5654,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t data;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -7110,13 +5662,7 @@ namespace interpreter
 	{
 		uint16_t result;
 		uint16_t obj;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -7124,13 +5670,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t obj;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -7139,11 +5679,7 @@ namespace interpreter
 		uint16_t dst;
 		uint16_t obj;
 		uint16_t defaultValue;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -7151,13 +5687,7 @@ namespace interpreter
 	{
 		uint16_t dst;
 		uint16_t obj;
-		uint8_t __pad6;
-		uint8_t __pad7;
-		uint32_t klass;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
+		Il2CppClass* klass;
 	};
 
 
@@ -7167,12 +5697,6 @@ namespace interpreter
 		uint16_t location;
 		uint16_t value;
 		uint16_t comparand;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -7182,12 +5706,6 @@ namespace interpreter
 		uint16_t location;
 		uint16_t value;
 		uint16_t comparand;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -7197,12 +5715,6 @@ namespace interpreter
 		uint16_t location;
 		uint16_t value;
 		uint16_t comparand;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -7233,10 +5745,6 @@ namespace interpreter
 	struct IRNewSystemObjectVar : IRCommon
 	{
 		uint16_t obj;
-		uint8_t __pad4;
-		uint8_t __pad5;
-		uint8_t __pad6;
-		uint8_t __pad7;
 	};
 
 
@@ -7262,12 +5770,6 @@ namespace interpreter
 		uint16_t x;
 		uint16_t y;
 		uint16_t z;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -7285,12 +5787,6 @@ namespace interpreter
 		uint16_t x;
 		uint16_t y;
 		uint16_t z;
-		uint8_t __pad10;
-		uint8_t __pad11;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 
@@ -7301,10 +5797,6 @@ namespace interpreter
 		uint16_t y;
 		uint16_t z;
 		uint16_t w;
-		uint8_t __pad12;
-		uint8_t __pad13;
-		uint8_t __pad14;
-		uint8_t __pad15;
 	};
 
 

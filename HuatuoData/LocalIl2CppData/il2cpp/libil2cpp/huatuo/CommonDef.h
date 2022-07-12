@@ -4,7 +4,7 @@
 #include <cstring>
 #include <memory>
 
-#include "Il2cppCompatibleDef.h"
+#include "huatuo-compatible-adaptor.h"
 
 #include "codegen/il2cpp-codegen.h"
 #include "utils/Memory.h"
@@ -22,6 +22,12 @@
 namespace huatuo
 {
     typedef uint8_t byte;
+
+#if IL2CPP_TARGET_ARM64 || IL2CPP_TARGET_ARMV7
+#define HUATUO_TARGET_ARM 1
+#else
+#define HUATUO_TARGET_ARM 0
+#endif
 
 #define TEMP_FORMAT(var, fmt, ...) char var[600]; \
 	snprintf(var, sizeof(var), fmt, __VA_ARGS__);

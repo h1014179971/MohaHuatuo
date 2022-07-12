@@ -82,9 +82,6 @@ namespace interpreter
 			}
 			StackObject* dataPtr = _stackBase + _stackTopIdx;
 			_stackTopIdx += slotNum;
-#if DEBUG
-			std::memset(dataPtr, 0xEA, slotNum * sizeof(StackObject));
-#endif
 			return dataPtr;
 		}
 

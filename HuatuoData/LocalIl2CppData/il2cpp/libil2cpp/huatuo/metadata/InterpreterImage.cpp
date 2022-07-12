@@ -492,7 +492,7 @@ namespace metadata
 				Il2CppFieldDefaultValue fdv = {};
 				fdv.fieldIndex = rowIndex - 1;
 				fdv.typeIndex = dataTypeIndex;
-				uint32_t dataImageOffset = _rawImage.GetImageOffsetOfBlob(type.type, data.value);
+				uint32_t dataImageOffset = _rawImage.GetImageOffsetOfBlob(data.value);
 				fdv.dataIndex = (DefaultValueDataIndex)EncodeWithIndex(dataImageOffset);
 				_fieldDefaultValues.push_back(fdv);
 				break;
@@ -505,7 +505,7 @@ namespace metadata
 				Il2CppParameterDefaultValue pdv = {};
 				pdv.typeIndex = dataTypeIndex;
 				pdv.parameterIndex = fd.parameterIndex;
-				uint32_t dataImageOffset = _rawImage.GetImageOffsetOfBlob(type.type, data.value);
+				uint32_t dataImageOffset = _rawImage.GetImageOffsetOfBlob(data.value);
 				pdv.dataIndex = (DefaultValueDataIndex)EncodeWithIndex(dataImageOffset);
 				_paramDefaultValues.push_back(pdv);
 				break;
@@ -1324,7 +1324,7 @@ namespace metadata
 			Il2CppGenericParameter& paramDef = _genericParams[i];
 			paramDef.num = data.number;
 			paramDef.flags = data.flags;
-			paramDef.nameIndex = EncodeWithIndex(data.name);
+			paramDef.nameIndex = data.name;
 			// constraintsStart 和 constrantsCount init at InitGenericParamConstrains() latter
 
 			TableType ownerType = DecodeTypeOrMethodDefCodedIndexTableType(data.owner);
