@@ -1,0 +1,19 @@
+{
+    "name": "Foundation.XcodeConfig.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3dd935700b477564c86202123a92b18e",
+        "GUID:4cc95977504937248a7aba7ccd6e419f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

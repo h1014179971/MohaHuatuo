@@ -1,0 +1,115 @@
+{
+  "deletefolder": [
+    "Data/Raw/Android",
+    "Data/Raw/Editor"
+  ],
+  "embeds": [
+    "FBAudienceNetwork.framework"
+  ],
+  "plist": {
+    "GADApplicationIdentifier": "ca-app-pub-5470400114155059~9270255018",
+    "CFBundleURLTypes": [
+      {
+        "CFBundleURLSchemes": [
+          "fb518208895558083"
+        ]
+      }
+    ],
+    "GADIsAdManagerApp": true,
+    "FacebookAppID": "518208895558083",
+    "NSAppTransportSecurity": {
+      "NSAllowsArbitraryLoads": true
+    },
+    "FacebookDisplayName": "Tankr.io 2 - Tank Clash",
+    "AppLovinSdkKey": "9hZx6KZPde6GIbp6OX3zn0M3HzROhgMsNxoTGLtv_-AHZzNzURwFRGJkEl6xQTnoPZFfv7Tv5iAegTb9-WPQni",
+    "LSApplicationQueriesSchemes": [
+      "fbapi",
+      "fb-messenger-share-api",
+      "fbauth2",
+      "fbshareextension"
+    ]
+  },
+  "properties": {
+    "-": {
+      "LIBRARY_SEARCH_PATHS": [
+        "\"$(SRCROOT)/Libraries\""
+      ]
+    },
+    "=": {
+      "GCC_ENABLE_OBJC_EXCEPTIONS": "YES",
+      "CODE_SIGN_IDENTITY": "Apple Development",
+      "ENABLE_BITCODE": "NO",
+      "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+      "PROVISIONING_PROFILE_SPECIFIER": "tank2_316_adhoc"
+    },
+    "+": {
+      "OTHER_LDFLAGS": [
+        "-ObjC"
+      ],
+      "LIBRARY_SEARCH_PATHS": [
+        "$(SRCROOT)/Libraries"
+      ]
+    }
+  },
+  "copyfiles": {
+    "iOSAdd/Files/HwAdsInterface.m": "Classes/HwAdsInterface.m",
+    "iOSAdd/Files/UnityAppController.mm": "Classes/UnityAppController.mm",
+    "iOSAdd/Files/HwAdsInterface.h": "Classes/HwAdsInterface.h"
+  },
+  "frameworks": {
+    "-": [],
+    "+": [
+      "AdSupport.framework",
+      "AVFoundation.framework",
+      "CoreGraphics.framework",
+      "CoreLocation.framework",
+      "CoreMedia.framework",
+      "CoreTelephony.framework",
+      "Foundation.framework",
+      "MediaPlayer.framework",
+      "MessageUI.framework",
+      "QuartzCore.framework",
+      "SafariServices.framework",
+      "StoreKit.framework",
+      "SystemConfiguration.framework",
+      "UIKit.framework",
+      "WebKit.framework"
+    ]
+  },
+  "addShellScript": [
+    {
+      "shellPath": "/bin/sh",
+      "shellName": "Architectures",
+      "shellScript": "Assets/xcodeConfig/Editor/Architectures_Shell.txt"
+    }
+  ],
+  "folders": {
+    "iOSAdd/HwAds": "HwAds"
+  },
+  "filesCompileFlag": {
+    "Libraries/Plugins/iOS/JSONKit.m": [
+      "-fno-objc-arc"
+    ]
+  },
+  "deleteFiles": {
+    "iOSAdd/HwAds": [
+      "MIT-LICENSE",
+      "LICENSE",
+      "README.md",
+      "LICENSE.md",
+      "CHANGELOG.md",
+      "CHANGELOG.md"
+    ]
+  },
+  "libs": {
+    "-": [],
+    "+": [
+      "libxml2.tbd",
+      "libxml2.tbd",
+      "libresolv.9.tbd",
+      "libsqlite3.tbd",
+      "libz.tbd"
+    ]
+  },
+  "teamId": "123"
+}
