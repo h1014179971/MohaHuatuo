@@ -76,7 +76,7 @@ namespace libx
         private string _savePath;
         private List<VFile> _versions = new List<VFile>();
 
-        
+        private AssetInit _assetInit;
 
         public void OnMessage(string msg)
         {
@@ -118,7 +118,7 @@ namespace libx
             _step = Step.Wait;
 
             Assets.updatePath = _savePath;
-            
+            _assetInit = this.GetComponent<AssetInit>();
             StartUpdate();
         }
 
@@ -257,12 +257,13 @@ namespace libx
         public void StartUpdate()
         {
             Debug.Log("StartUpdate.Development:" + development);
+
 //#if UNITY_EDITOR
             if (development)
             {
                 //Assets.runtimeMode = runtimeMode;
                 //StartCoroutine(LoadGameScene());
-                
+                _assetInit.AssetsInitialize();
                 return;
             }
 //#endif
@@ -583,7 +584,7 @@ namespace libx
                 OnVersion(version.ToString());
             }
 
-            //StartCoroutine(LoadGameScene());
+            _assetInit.AssetsInitialize();
         }
 
         private IEnumerator LoadGameScene()

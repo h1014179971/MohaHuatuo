@@ -24,7 +24,7 @@ namespace libx
         private static Dictionary<string, WeakReference> AssetReferences = new Dictionary<string, WeakReference>(32);
         private static Dictionary<string, AssetRequest> LoadedAssets = new Dictionary<string, AssetRequest>(32);
         private static List<string> UnUsedAssets = new List<string>(16);
-        private static bool hasAB = false;
+        private static bool hasAB = true;
 
         /// <summary>
         /// 根据类型和路径返回相应的资源(同步方法)

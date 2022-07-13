@@ -23,19 +23,12 @@ public class LoadDll : MonoBehaviour
                 // "DOTween.Modules.dll",
                 // "UniTask.dll",
             };
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        //StartCoroutine(UpdateBundles());
-        //LoadGameDll();
-        //RunMain();
-
-        
-        StartCoroutine(Wait());
+        EventDispatcher.Instance.AddListener(EnumEventType.Event_Asset_Init, AssetInitComplete);
     }
-    IEnumerator Wait()
+    private void AssetInitComplete(BaseEventArgs args)
     {
-        yield return new WaitForSeconds(3f);
         LoadGameDll();
         RunMain();
     }
@@ -47,10 +40,10 @@ public class LoadDll : MonoBehaviour
         aotDllBytes = new TextAsset[aotDlls.Count];
         for (int i = 0;i< aotDlls.Count; i++)
         {
-            aotDllBytes[i] = AssetLoader.Load(aotDlls[i] + "bytes", typeof(TextAsset)) as TextAsset;
-            TextAsset hotfixDll = AssetLoader.Load("HotFix.dll.bytes",typeof(TextAsset)) as TextAsset;
-            gameAss = Assembly.Load(hotfixDll.bytes);
+            aotDllBytes[i] = AssetLoader.Load(aotDlls[i] + ".bytes", typeof(TextAsset)) as TextAsset;
         }
+        TextAsset hotfixDll = AssetLoader.Load("HotFix.dll.bytes", typeof(TextAsset)) as TextAsset;
+        gameAss = Assembly.Load(hotfixDll.bytes);
 #else
         gameAss = AppDomain.CurrentDomain.GetAssemblies().First(assembly => assembly.GetName().Name == "HotFix");
 #endif
@@ -72,5 +65,9 @@ public class LoadDll : MonoBehaviour
         //var updateMethod = appType.GetMethod("Update");
         //var updateDel = System.Delegate.CreateDelegate(typeof(Action<float>), null, updateMethod);
         //updateDel(deltaTime);
+    }
+    private void OnDestroy()
+    {
+        EventDispatcher.Instance.RemoveListener(EnumEventType.Event_Asset_Init, AssetInitComplete);
     }
 }

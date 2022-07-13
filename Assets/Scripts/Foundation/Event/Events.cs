@@ -4,19 +4,7 @@
 public enum EnumEventType
 {
     None,
-    Event_Player_Money,//玩家钞票改变
-    Event_Game_StartWait,//等待开始
-    Event_Game_StartDown,//开始倒计时
-    Event_Game_Start,//游戏开始
-    Event_Game_FirstMove,//开始游戏后第一次移动
-    Event_Game_PlayerNumble,//游戏 玩家数量变化
-    Event_GameOver,
-    Event_Create_Player,
-    Event_Character_Add_Plank,
-    Event_AI_RemoveTargetPlank,//AI锁定的目标木板被移除
-    Event_Handbook_OnPageChanged,
-    Event_Handbook_AddSkinInfo,
-    Event_Player_SelectSkin,//玩家当前选择的皮肤改变
+    Event_Asset_Init,//资源初始化后，开始游戏
 
 
     EventTypeEnd
