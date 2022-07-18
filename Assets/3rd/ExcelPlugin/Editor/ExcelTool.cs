@@ -10,7 +10,7 @@ public class ExcelTool
     [MenuItem("Tools/读取配置文件")]
     public static void CreateAndRead()
     {
-        string assetPath = Path.Combine(Application.dataPath, "GameAssets/Resources/JsonData");
+        string assetPath = Path.Combine(Application.dataPath, "GameAssets/JsonData");
         Debug.Log($"Application.dataPath==={Application.dataPath}");
         if (Directory.Exists(assetPath))
             Directory.Delete(assetPath, true);

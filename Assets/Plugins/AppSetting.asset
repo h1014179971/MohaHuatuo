@@ -13,4 +13,3 @@ MonoBehaviour:
   m_Name: AppSetting
   m_EditorClassIdentifier: 
   SimulateMode: 0
-  DebugMode: 1

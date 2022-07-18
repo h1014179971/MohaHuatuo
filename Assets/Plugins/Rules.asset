@@ -20,13 +20,25 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 1
+  version: 24
   scenesInBuild:
   - {fileID: 102900000, guid: f63ac38a2cd34d5458980c51ad55fbb8, type: 3}
   rules:
   - searchPath: Assets/GameAssets/Dlls
     searchPattern: '*'
     nameBy: 2
+    assetBundleName: 
+  - searchPath: Assets/GameAssets/JsonData
+    searchPattern: '*'
+    nameBy: 2
+    assetBundleName: 
+  - searchPath: Assets/GameAssets/Textures/Cells
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/GameAssets/Prefabs/Maps
+    searchPattern: '*.prefab'
+    nameBy: 1
     assetBundleName: 
   ruleAssets:
   - bundle: assets/gameassets/dlls.unity3d
@@ -37,6 +49,14 @@ MonoBehaviour:
     path: Assets/GameAssets/Dlls/System.dll.bytes
   - bundle: assets/gameassets/dlls.unity3d
     path: Assets/GameAssets/Dlls/mscorlib.dll.bytes
+  - bundle: assets/gameassets/jsondata.unity3d
+    path: Assets/GameAssets/JsonData/Map.json
+  - bundle: assets/gameassets/prefabs/maps/map.prefab.unity3d
+    path: Assets/GameAssets/Prefabs/Maps/Map.prefab
+  - bundle: assets/gameassets/textures/cells/circle_0.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_0.png
+  - bundle: assets/gameassets/textures/cells/circle_2.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_2.png
   ruleBundles:
   - name: assets/gameassets/dlls.unity3d
     assets:
@@ -44,3 +64,15 @@ MonoBehaviour:
     - Assets/GameAssets/Dlls/mscorlib.dll.bytes
     - Assets/GameAssets/Dlls/System.Core.dll.bytes
     - Assets/GameAssets/Dlls/System.dll.bytes
+  - name: assets/gameassets/jsondata.unity3d
+    assets:
+    - Assets/GameAssets/JsonData/Map.json
+  - name: assets/gameassets/textures/cells/circle_0.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_0.png
+  - name: assets/gameassets/textures/cells/circle_2.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_2.png
+  - name: assets/gameassets/prefabs/maps/map.prefab.unity3d
+    assets:
+    - Assets/GameAssets/Prefabs/Maps/Map.prefab

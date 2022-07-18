@@ -15,6 +15,9 @@ MonoBehaviour:
   activeVariants: []
   dirs:
   - Assets/GameAssets/Dlls
+  - Assets/GameAssets/JsonData
+  - Assets/GameAssets/Prefabs/Maps
+  - Assets/GameAssets/Textures/Cells
   assets:
   - name: HotFix.dll.bytes
     bundle: 0
@@ -28,9 +31,41 @@ MonoBehaviour:
   - name: mscorlib.dll.bytes
     bundle: 0
     dir: 0
+  - name: Map.json
+    bundle: 1
+    dir: 1
+  - name: Map.prefab
+    bundle: 2
+    dir: 2
+  - name: circle_0.png
+    bundle: 3
+    dir: 3
+  - name: circle_2.png
+    bundle: 4
+    dir: 3
   bundles:
   - name: assets/gameassets/dlls.unity3d
     id: 0
     deps: 
-    len: 3162330
-    hash: ad0e4f1e756ca3a7c7aa31e34f2d75e8
+    len: 3166463
+    hash: f8f83c601ea804e87d54cd9e934bbdbf
+  - name: assets/gameassets/jsondata.unity3d
+    id: 1
+    deps: 
+    len: 2666
+    hash: 8a9affa9298e3f78161141cca651bb84
+  - name: assets/gameassets/prefabs/maps/map.prefab.unity3d
+    id: 2
+    deps: 04000000
+    len: 5977
+    hash: a58b7b91915fa66a15b3f1c896df06ef
+  - name: assets/gameassets/textures/cells/circle_0.png.unity3d
+    id: 3
+    deps: 
+    len: 4050
+    hash: 314b5604e4385bed1ee6a9fea7148e7a
+  - name: assets/gameassets/textures/cells/circle_2.png.unity3d
+    id: 4
+    deps: 
+    len: 39905
+    hash: 56b9a0d8f72cdd5cfdb98edac0943fe6

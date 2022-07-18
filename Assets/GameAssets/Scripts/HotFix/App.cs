@@ -21,8 +21,8 @@ namespace Moha.HotFix
 #endif
             TestAOTGeneric();
 
-            //LoadScene();
-            DoLoadScene();
+            GameInit();
+            //DoLoadScene();
             return 0;
         }
         /// <summary>
@@ -33,6 +33,13 @@ namespace Moha.HotFix
             //var arr = new List<MyValue>();
             //arr.Add(new MyValue() { x = 1, y = 10, s = "abc" });
             //Debug.Log("AOT泛型补充元数据机制测试正常");
+        }
+        public static void GameInit()
+        {
+            GameObject obj = new GameObject();
+            obj.name = "GameLauncher";
+            Space.GameLauncher launcher = obj.GetOrAddComponent<Space.GameLauncher>();
+            launcher?.Init();
         }
         /// <summary>
         /// 切换场景
@@ -61,15 +68,15 @@ namespace Moha.HotFix
             /// 热更新dll不缺元数据，不需要补充，如果调用LoadMetadataForAOTAssembly会返回错误
 
 
-            //foreach (var dllBytes in LoadDll.aotDllBytes)
-            //{
-            //    fixed (byte* ptr = dllBytes.bytes)
-            //    {
-            //        // 加载assembly对应的dll，会自动为它hook。一旦aot泛型函数的native函数不存在，用解释器版本代码
-            //        int err = Huatuo.HuatuoApi.LoadMetadataForAOTAssembly((IntPtr)ptr, dllBytes.bytes.Length);
-            //        Debug.Log($"LoadMetadataForAOTAssembly:{dllBytes.name}. ret:{err}");
-            //    }
-            //}
+            foreach (var dllBytes in LoadDll.aotDllBytes)
+            {
+                fixed (byte* ptr = dllBytes.bytes)
+                {
+                    // 加载assembly对应的dll，会自动为它hook。一旦aot泛型函数的native函数不存在，用解释器版本代码
+                    int err = Huatuo.HuatuoApi.LoadMetadataForAOTAssembly((IntPtr)ptr, dllBytes.bytes.Length);
+                    Debug.Log($"LoadMetadataForAOTAssembly:{dllBytes.name}. ret:{err}");
+                }
+            }
         }
     }
 }
