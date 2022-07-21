@@ -20,7 +20,7 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 24
+  version: 25
   scenesInBuild:
   - {fileID: 102900000, guid: f63ac38a2cd34d5458980c51ad55fbb8, type: 3}
   rules:
