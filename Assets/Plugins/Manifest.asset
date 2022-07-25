@@ -16,6 +16,7 @@ MonoBehaviour:
   dirs:
   - Assets/GameAssets/Dlls
   - Assets/GameAssets/JsonData
+  - Assets/GameAssets/Prefabs/Basics
   - Assets/GameAssets/Prefabs/Maps
   - Assets/GameAssets/Textures/Cells
   assets:
@@ -31,41 +32,52 @@ MonoBehaviour:
   - name: mscorlib.dll.bytes
     bundle: 0
     dir: 0
+  - name: BallAuto.json
+    bundle: 1
+    dir: 1
   - name: Map.json
     bundle: 1
     dir: 1
-  - name: Map.prefab
+  - name: auto.prefab
     bundle: 2
     dir: 2
-  - name: circle_0.png
+  - name: Map.prefab
     bundle: 3
     dir: 3
-  - name: circle_2.png
+  - name: circle_0.png
     bundle: 4
-    dir: 3
+    dir: 4
+  - name: circle_2.png
+    bundle: 5
+    dir: 4
   bundles:
   - name: assets/gameassets/dlls.unity3d
     id: 0
     deps: 
-    len: 3166463
-    hash: f8f83c601ea804e87d54cd9e934bbdbf
+    len: 3172659
+    hash: f9b57b88b020146c15f0d5b75274ca07
   - name: assets/gameassets/jsondata.unity3d
     id: 1
     deps: 
-    len: 2666
-    hash: 8a9affa9298e3f78161141cca651bb84
-  - name: assets/gameassets/prefabs/maps/map.prefab.unity3d
+    len: 2813
+    hash: d4cd74770b58f8fa05b8ffc3dc02d169
+  - name: assets/gameassets/prefabs/basics/auto.prefab.unity3d
     id: 2
-    deps: 04000000
-    len: 5977
-    hash: a58b7b91915fa66a15b3f1c896df06ef
-  - name: assets/gameassets/textures/cells/circle_0.png.unity3d
+    deps: 
+    len: 8170
+    hash: 170b1b50376b561c5e3aa73057741469
+  - name: assets/gameassets/prefabs/maps/map.prefab.unity3d
     id: 3
+    deps: 
+    len: 5781
+    hash: 752a3b6980222f72c599e5b78c6ef9cb
+  - name: assets/gameassets/textures/cells/circle_0.png.unity3d
+    id: 4
     deps: 
     len: 4050
     hash: 314b5604e4385bed1ee6a9fea7148e7a
   - name: assets/gameassets/textures/cells/circle_2.png.unity3d
-    id: 4
+    id: 5
     deps: 
     len: 39905
     hash: 56b9a0d8f72cdd5cfdb98edac0943fe6

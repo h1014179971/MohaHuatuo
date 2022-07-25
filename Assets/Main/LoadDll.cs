@@ -37,6 +37,7 @@ public class LoadDll : MonoBehaviour
     {
 
 #if !UNITY_EDITOR
+        
         aotDllBytes = new TextAsset[aotDlls.Count];
         for (int i = 0;i< aotDlls.Count; i++)
         {
@@ -45,7 +46,18 @@ public class LoadDll : MonoBehaviour
         TextAsset hotfixDll = AssetLoader.Load("HotFix.dll.bytes", typeof(TextAsset)) as TextAsset;
         gameAss = Assembly.Load(hotfixDll.bytes);
 #else
-        gameAss = AppDomain.CurrentDomain.GetAssemblies().First(assembly => assembly.GetName().Name == "HotFix");
+        if(!Assets.runtimeMode)
+            gameAss = AppDomain.CurrentDomain.GetAssemblies().First(assembly => assembly.GetName().Name == "HotFix");
+        else
+        {
+            aotDllBytes = new TextAsset[aotDlls.Count];
+            for (int i = 0; i < aotDlls.Count; i++)
+            {
+                aotDllBytes[i] = AssetLoader.Load(aotDlls[i] + ".bytes", typeof(TextAsset)) as TextAsset;
+            }
+            TextAsset hotfixDll = AssetLoader.Load("HotFix.dll.bytes", typeof(TextAsset)) as TextAsset;
+            gameAss = Assembly.Load(hotfixDll.bytes);
+        }
 #endif
     }
 

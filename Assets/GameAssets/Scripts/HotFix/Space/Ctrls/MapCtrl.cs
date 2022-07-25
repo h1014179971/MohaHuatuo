@@ -30,6 +30,24 @@ namespace Space
 
 
         }
+        /// <summary>
+        /// 地图上随机一点
+        /// </summary>
+        /// <param name="angle"></param>
+        /// <param name="radius"></param>
+        /// <returns></returns>
+        public Vector3 RandomPos(out float angle, float radius = 7)
+        {
+            //float radius = 7;
+            float x = Random.Range(-radius, radius);
+            float y = Mathf.Sqrt(radius * radius - x * x);
+            if (Random.Range(0, 2) == 0)
+                y = -y;
+            Vector3 pos = new Vector3(x, y, 0);
+            angle = Quaternion.FromToRotation(Vector3.up, pos).eulerAngles.z;
+            pos += MapCtrl.Instance.CenterPos;
+            return pos;
+        }
     }
 }
 

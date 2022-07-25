@@ -19,6 +19,7 @@ namespace Space
         private void InitLocalData()
         {
             MapMgr.Instance.Init();
+            BallMgr.Instance.Init();
         }
     }
 }

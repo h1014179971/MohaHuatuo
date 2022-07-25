@@ -15,6 +15,7 @@ namespace Space
     {
             
         public static readonly string map = "Map.json";
+        public static readonly string ballAuto = "BallAuto.json";
     }
     public static class Tags
     {

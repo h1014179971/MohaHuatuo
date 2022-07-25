@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using libx;
 using Foundation;
+using DG.Tweening;
 
 namespace Space
 {
@@ -11,6 +12,7 @@ namespace Space
         private Transform _bg;
         private SpriteRenderer _cellSp;
         private Map _map;
+        private Tweener _cellTweener;
         private void Awake()
         {
             _bg = this.GetComponentByPath<Transform>("bg");
@@ -19,9 +21,6 @@ namespace Space
         public void Init(Map map)
         {
             _map = map;
-            Debug.Log($"LoadSprite");
-            Texture2D tex = LoadS();
-            return;
             Texture2D bigTex = LoadSprite();
             Debug.Log($"LoadCenter");
             Texture2D centerTex = LoadCenter();
@@ -32,45 +31,12 @@ namespace Space
             CellModel cellModel = obj.GetOrAddComponent<CellModel>();
             cellModel.Init(bigTex, 10, centerTex.width, centerTex.height, CellType.general);
 
-            //StartCoroutine(WaitDrawMap());
+            StartCoroutine(WaitDrawMap());
 
-        }
-        private Texture2D LoadS()
-        {
-            Debug.Log($"loads");
-            string cellInfo = _map.cellInfo;
-            Debug.Log($"LoadS:{cellInfo}");
-            string[] cells = cellInfo.Split(';');
-            Debug.Log($"LoadS11:{cells.Length}");
-            Texture2D bigTex = null;
-            for (int i = 0; i < cells.Length; i++)
-            {
-                int index = i;
-                string[] cell = cells[i].Split('-');
-                Texture2D sprite = AssetLoader.Load<Texture2D>($"{cell[0]}.png");
-                float scaleMul = float.Parse(cell[1]);
-                Color hexColor = Color.white;
-                if (!cell[2].Equals("1"))
-                    hexColor = Utils.HexToColor(cell[2]);
-                Utils.HexToColor("ffffff");
-                Texture2D tex = TextureTest.PointTest(sprite,(int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul), hexColor);
-                Debug.Log($"3333333333");
-                //Texture2D tex = TextureScale.ScaleTextureBilinear(sprite, (int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul));
-                //Debug.Log($"mapModel 1111");
-                //Texture2D tex = TextureScaleThread.Bilinear(sprite, (int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul), hexColor);
-                //if (index == 0)
-                //    bigTex = tex;
-                //else
-                //    bigTex = TextureScale.ComplexTwoTextures(bigTex, tex, false);
-            }
-
-            return bigTex;
         }
         private Texture2D LoadSprite()
         {
-            Debug.Log($"LoadSprite1111");
             string cellInfo = _map.cellInfo;
-            Debug.Log($"LoadSprite222:{cellInfo}");
             string[] cells = cellInfo.Split(';');
             Texture2D bigTex = null;
             for (int i = 0; i < cells.Length; i++)
@@ -82,8 +48,6 @@ namespace Space
                 Color hexColor = Color.white;
                 if (!cell[2].Equals("1"))
                     hexColor = Utils.HexToColor(cell[2]);
-                //Texture2D tex = TextureScale.ScaleTextureBilinear(sprite, (int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul));
-                Debug.Log($"mapModel 1111");
                 Texture2D tex = TextureScaleThread.Bilinear(sprite, (int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul), hexColor);
                 if (index == 0)
                     bigTex = tex;
@@ -106,12 +70,27 @@ namespace Space
             Texture2D tex = TextureScaleThread.Bilinear(sprite, (int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul), hexColor);
             return tex;
 
-            //string centerInfo = _map.centerInfo;
-            //GameObject obj = new GameObject();
-            //obj.transform.SetParent(_cellSp.transform);
-            //obj.transform.localPosition = Vector3.zero;
-            //CellModel cellModel = obj.GetOrAddComponent<CellModel>();
-            //cellModel.Init(centerInfo, 30, CellType.center);
+            
+        }
+        IEnumerator WaitDrawMap()
+        {
+            yield return new WaitForEndOfFrame();
+            //EventDispatcher.Instance.TriggerEvent(new BaseEventArgs(EnumEventType.Event_Game_Start));
+            BgAnimation();
+            CellsAnimation();
+        }
+        private void BgAnimation()
+        {
+            for (int i = 0; i < _bg.childCount; i++)
+            {
+                int index = i;
+                Transform child = _bg.Find($"halo{index}");
+                child.DOLocalRotate(Vector3.back * 360, 180 - 60 * index, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1);
+            }
+        }
+        private void CellsAnimation()
+        {
+            _cellTweener = _cellSp.transform.DOLocalRotate(Vector3.back * 360, 60, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1);
         }
     }
 }

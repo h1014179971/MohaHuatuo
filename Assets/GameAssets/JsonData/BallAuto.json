@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1.0,
+    "horizontalspeed": 2.0,
+    "gravity": 3.0,
+    "radius": 30.0,
+    "cd": 0.4,
+    "fxScale": 0.8
+  },
+  {
+    "id": 2.0,
+    "horizontalspeed": 0.0,
+    "gravity": 3.0,
+    "radius": 30.0,
+    "cd": 0.8,
+    "fxScale": 0.8
+  }
+]

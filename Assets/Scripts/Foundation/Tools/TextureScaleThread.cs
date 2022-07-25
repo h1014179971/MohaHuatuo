@@ -41,7 +41,6 @@ namespace Foundation
 
         private static Texture2D ThreadedScale(Texture2D tex, int newWidth, int newHeight, Color color, bool useBilinear)
         {
-            Debug.Log($"1111111111");
             texColors = tex.GetPixels();
             newColors = new Color[newWidth * newHeight];
             Texture2D newTexture = new Texture2D(newWidth, newHeight);

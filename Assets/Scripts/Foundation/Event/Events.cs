@@ -5,7 +5,8 @@ public enum EnumEventType
 {
     None,
     Event_Asset_Init,//资源初始化后，开始游戏
-
+    Event_Game_Next,//下一关
+    Event_Cell_EraseMask,
 
     EventTypeEnd
 }
