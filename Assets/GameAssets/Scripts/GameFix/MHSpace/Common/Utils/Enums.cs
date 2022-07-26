@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Space
+namespace MHSpace
 {
     /// <summary>
     /// сно╥в╢л╛

@@ -5,7 +5,7 @@ using Foundation;
 using UnityEngine.EventSystems;
 using libx;
 
-namespace Space
+namespace MHSpace
 {
     public class AutoBallDeckModel : BaseTouch
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Foundation;
 
-namespace Space
+namespace MHSpace
 {
     public class GameLauncher : MonoBehaviour
     {

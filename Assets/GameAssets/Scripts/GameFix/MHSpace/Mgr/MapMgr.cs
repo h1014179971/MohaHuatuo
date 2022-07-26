@@ -5,7 +5,7 @@ using UnityEngine;
 using Foundation;
 using libx;
 
-namespace Space
+namespace MHSpace
 {
     public class MapMgr : Singleton<MapMgr>
     {

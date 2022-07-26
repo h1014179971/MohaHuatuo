@@ -5,7 +5,7 @@ using libx;
 using Foundation;
 using DG.Tweening;
 
-namespace Space
+namespace MHSpace
 {
     public class MapModel : MonoBehaviour
     {

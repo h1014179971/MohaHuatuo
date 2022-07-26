@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using libx;
 
-namespace Space
+namespace MHSpace
 {
     public class MapCtrl : MonoSingleton<MapCtrl>
     {

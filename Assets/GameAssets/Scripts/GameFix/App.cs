@@ -38,7 +38,7 @@ namespace Moha.GameFix
         {
             GameObject obj = new GameObject();
             obj.name = "GameLauncher";
-            Space.GameLauncher launcher = obj.GetOrAddComponent<Space.GameLauncher>();
+            MHSpace.GameLauncher launcher = obj.GetOrAddComponent<MHSpace.GameLauncher>();
             launcher?.Init();
         }
         /// <summary>

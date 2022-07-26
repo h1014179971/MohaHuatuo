@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Space
+namespace MHSpace
 {
     public class BallMgr : Singleton<BallMgr>
     {

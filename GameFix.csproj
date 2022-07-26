@@ -66,19 +66,19 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\RedDotSystem\RedDotType.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Utils\ResizePanel.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonMgr\AutoResGCMgr.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Tools\CameraAdapter.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Tools\CameraAdapter.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Utils\Gesture\DropMe.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\CommonHelper\ObjectPoolHelper.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\MultiThreads\ColaLoom.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\NetWork\Socket\DataBuff.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Common\Utils\Const.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Common\Utils\Const.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\EnumType.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Game\AnimCtrl\CharAnimatorCtrl.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\StringUtils.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UGUIExtensions\ParticleOrderLayerAuto.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\LitJson\JsonMapper.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\UIButtonClick.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Models\AutoBallDeckModel.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Models\AutoBallDeckModel.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Codec\FullSerializerAPI.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\NetWork\Socket\ByteBuffer.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\BaseTouch.cs" />
@@ -90,21 +90,21 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonHelper\TimeManger\TimerManager.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Game\AnimCtrl\IAnimCtrl.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\NetWork\Utils\Converter.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Data\Map.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Data\Map.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Tools\PageView.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UIEventListeners\OtherEventListenner.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Mgr\MapMgr.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Mgr\MapMgr.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonHelper\AssetMgr\ContainerPool.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\IDS\Utils\DebugUtil.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Component\Tools\CustomSlider.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\LitJson\Extensions.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Ctrls\GameCtrl.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Ctrls\GameCtrl.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\TimerEvent.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Component\Tools\MyButton.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Component\AutoLayout\LayoutMaxSize.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonHelper\GUIHelper.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\MyDebug.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Models\AutoModel.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Models\AutoModel.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UIEventListeners\IUGUIEventHandler.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Component\LinkImageText\FlexText.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\SelfRotate.cs" />
@@ -114,7 +114,7 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\UIBase\UIWindow.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\Long2.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Component\MyTextSpacing.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Data\Ball.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Data\Ball.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonMgr\UIMgr.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Abandoned\SubSys\Loading\UILoading.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\CanvasScalerRotator.cs" />
@@ -133,7 +133,7 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonHelper\CommonUtil.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UGUIExtensions\DropdownControl.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\LitJson\JsonMockWrapper.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Models\CellModel.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Models\CellModel.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Component\Tools\ButtonInfo.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UGUIExtensions\UGUISpriteAnimation.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\LitJson\Netstandard15Polyfill.cs" />
@@ -161,7 +161,7 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\IDS\Utils\FPS.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Tools\SetActiveEx.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\InputWrapper.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Ctrls\MapCtrl.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Ctrls\MapCtrl.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\SorterTag.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\Timer.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\TextureScale.cs" />
@@ -183,7 +183,7 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\AppConst.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Utils\GradientRampBg.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\RedDotSystem\RedDotCtrl.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Common\Utils\Enums.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Common\Utils\Enums.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Encry\CryptoPrefs.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\Constants.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Game\AnimCtrl\CollectionEffectSystem.cs" />
@@ -198,7 +198,7 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\SDK\IAAMgr.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\App.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Singleton\Singleton.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Mgr\BallMgr.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Mgr\BallMgr.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\Tools\Utils.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UGUIExtensions\UITableView\Scripts\UITableViewCell.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Data\AppearanceData\UIModelSettingData.cs" />
@@ -240,7 +240,7 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonHelper\ColaHelper.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Foundation\MultiThreads\MainThreadTask.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\NetWork\Socket\MessageCenter.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\GameLauncher.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\GameLauncher.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UGUIExtensions\VerticalScrollSnap.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\Foundation\SDK\IOSPlatform.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\IDS\Utils\CoroutineTask.cs" />
@@ -252,7 +252,7 @@
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonMgr\GameManager.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\Tools\ScrollRectEx.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\UIFramework\RootCanvas.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameFix\Space\Models\MapModel.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameFix\MHSpace\Models\MapModel.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\UIBase\UGUIExtensions\Gradient.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\CommonHelper\AssetMgr\AssetTrackMgr.cs" />
     <Compile Include="Assets\GameAssets\Scripts\GameFix\MHFoundation\ColaFrameWork\Game\Interface\IManager.cs" />
@@ -954,11 +954,11 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Program Files\Unity\2020.3.33f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
