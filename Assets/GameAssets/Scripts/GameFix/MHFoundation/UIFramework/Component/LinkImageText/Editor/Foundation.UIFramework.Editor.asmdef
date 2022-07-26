@@ -1,0 +1,18 @@
+{
+    "name": "Foundation.UIFramework.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:10472a7130c031b4b9bdff7f4fa1fe83"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

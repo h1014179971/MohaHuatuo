@@ -1,0 +1,19 @@
+{
+    "name": "GameFix",
+    "rootNamespace": "",
+    "references": [
+        "GUID:44867461c7558094cab94edbb05214d9",
+        "GUID:e4f6587c84533a74e902fba9a346f8c7",
+        "GUID:9998a05338e3ad749bd57e786d8183b5",
+        "GUID:3c3299c8ebe9bc441966baec75baa447"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

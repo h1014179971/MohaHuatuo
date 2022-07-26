@@ -20,7 +20,7 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 36
+  version: 39
   scenesInBuild:
   - {fileID: 102900000, guid: f63ac38a2cd34d5458980c51ad55fbb8, type: 3}
   rules:
@@ -46,7 +46,7 @@ MonoBehaviour:
     assetBundleName: 
   ruleAssets:
   - bundle: assets/gameassets/dlls.unity3d
-    path: Assets/GameAssets/Dlls/HotFix.dll.bytes
+    path: Assets/GameAssets/Dlls/GameFix.dll.bytes
   - bundle: assets/gameassets/dlls.unity3d
     path: Assets/GameAssets/Dlls/System.Core.dll.bytes
   - bundle: assets/gameassets/dlls.unity3d
@@ -68,7 +68,7 @@ MonoBehaviour:
   ruleBundles:
   - name: assets/gameassets/dlls.unity3d
     assets:
-    - Assets/GameAssets/Dlls/HotFix.dll.bytes
+    - Assets/GameAssets/Dlls/GameFix.dll.bytes
     - Assets/GameAssets/Dlls/mscorlib.dll.bytes
     - Assets/GameAssets/Dlls/System.Core.dll.bytes
     - Assets/GameAssets/Dlls/System.dll.bytes

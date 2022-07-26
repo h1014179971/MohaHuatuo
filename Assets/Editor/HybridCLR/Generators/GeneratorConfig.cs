@@ -20,8 +20,8 @@ namespace HybridCLR.Generators
             return new List<Type>
             {
                 typeof(Action<int, string, Vector3>),
-                typeof(Foundation.TextureScaleThread),
-                typeof(EventArgsThree<Vector3,float,System.Action>)
+                //typeof(Foundation.TextureScaleThread),
+                //typeof(EventArgsThree<Vector3,float,System.Action>)
             };
         }
 

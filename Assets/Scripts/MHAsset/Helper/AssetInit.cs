@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace libx
 {
@@ -10,9 +11,11 @@ namespace libx
         public static List<string> _searchPath = new List<string>();
     }
 #endif
+    public class LoadAssetComplete : UnityEvent { };
     public class AssetInit : MonoBehaviour
     {
         [SerializeField]private Updater _updater;
+        public static LoadAssetComplete _loadComplete = new LoadAssetComplete();
         IEnumerator Start()
         {
             yield return new WaitForEndOfFrame();
@@ -44,7 +47,9 @@ namespace libx
                 init.Release();
                 Debug.Log("start load data");
 
-                EventDispatcher.Instance.TriggerEvent(new BaseEventArgs(EnumEventType.Event_Asset_Init));
+                #region 资源加载完成 进入游戏，首先加载DLL
+                _loadComplete?.Invoke();
+                #endregion
 
             }
             else

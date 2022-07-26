@@ -29,7 +29,7 @@ namespace HybridCLR
             {
                 var hotfixDlls = new List<string>()
                 {
-                    "HotFix.dll",
+                    "GameFix.dll",
                 };
                 string exportDir = Path.Combine(Application.dataPath, "GameAssets/Dlls");
                 foreach (var dll in hotfixDlls)

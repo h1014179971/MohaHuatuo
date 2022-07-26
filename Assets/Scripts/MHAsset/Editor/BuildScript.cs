@@ -30,7 +30,6 @@ using System.Diagnostics;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
-using Foundation;
 using Debug = UnityEngine.Debug;
 
 namespace libx

@@ -25,9 +25,9 @@ public class LoadDll : MonoBehaviour
             };
     private void Awake()
     {
-        EventDispatcher.Instance.AddListener(EnumEventType.Event_Asset_Init, AssetInitComplete);
+        AssetInit._loadComplete.AddListener(AssetInitComplete);
     }
-    private void AssetInitComplete(BaseEventArgs args)
+    public void AssetInitComplete()
     {
         LoadGameDll();
         RunMain();
@@ -43,11 +43,13 @@ public class LoadDll : MonoBehaviour
         {
             aotDllBytes[i] = AssetLoader.Load(aotDlls[i] + ".bytes", typeof(TextAsset)) as TextAsset;
         }
-        TextAsset hotfixDll = AssetLoader.Load("HotFix.dll.bytes", typeof(TextAsset)) as TextAsset;
-        gameAss = Assembly.Load(hotfixDll.bytes);
+        //TextAsset dllBytes1 = AssetLoader.Load("Foundation.dll.bytes", typeof(TextAsset)) as TextAsset;
+        //System.Reflection.Assembly.Load(dllBytes1.bytes);
+        TextAsset gamefixDll = AssetLoader.Load("GameFix.dll.bytes", typeof(TextAsset)) as TextAsset;
+        gameAss = Assembly.Load(gamefixDll.bytes);
 #else
-        if(!Assets.runtimeMode)
-            gameAss = AppDomain.CurrentDomain.GetAssemblies().First(assembly => assembly.GetName().Name == "HotFix");
+        if (!Assets.runtimeMode)
+            gameAss = AppDomain.CurrentDomain.GetAssemblies().First(assembly => assembly.GetName().Name == "GameFix");
         else
         {
             aotDllBytes = new TextAsset[aotDlls.Count];
@@ -55,8 +57,10 @@ public class LoadDll : MonoBehaviour
             {
                 aotDllBytes[i] = AssetLoader.Load(aotDlls[i] + ".bytes", typeof(TextAsset)) as TextAsset;
             }
-            TextAsset hotfixDll = AssetLoader.Load("HotFix.dll.bytes", typeof(TextAsset)) as TextAsset;
-            gameAss = Assembly.Load(hotfixDll.bytes);
+            //TextAsset dllBytes1 = AssetLoader.Load("Foundation.dll.bytes", typeof(TextAsset)) as TextAsset;
+            //System.Reflection.Assembly.Load(dllBytes1.bytes);
+            TextAsset gamefixDll = AssetLoader.Load("GameFix.dll.bytes", typeof(TextAsset)) as TextAsset;
+            gameAss = Assembly.Load(gamefixDll.bytes);
         }
 #endif
     }
@@ -69,7 +73,7 @@ public class LoadDll : MonoBehaviour
             UnityEngine.Debug.LogError("dll未加载");
             return;
         }
-        var appType = gameAss.GetType("Moha.HotFix.App");
+        var appType = gameAss.GetType("Moha.GameFix.App");
         var mainMethod = appType.GetMethod("Main");
         mainMethod.Invoke(null, null);
 
@@ -80,6 +84,6 @@ public class LoadDll : MonoBehaviour
     }
     private void OnDestroy()
     {
-        EventDispatcher.Instance.RemoveListener(EnumEventType.Event_Asset_Init, AssetInitComplete);
+        AssetInit._loadComplete.AddListener(AssetInitComplete);
     }
 }
