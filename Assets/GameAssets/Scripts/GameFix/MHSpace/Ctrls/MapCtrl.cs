@@ -9,6 +9,7 @@ namespace MHSpace
     {
         private MapModel _mapModel;
         private Map _map;
+        public Map MapConfig { get { return _map; } }
         public Vector3 CenterPos { get; set; }
         public void Init(Map map)
         {
@@ -23,7 +24,6 @@ namespace MHSpace
                 Destroy(lastMapObj);
             GameObject prefab = AssetLoader.Load<GameObject>(map.prefabName + ".prefab");
             GameObject mapObj = GameObject.Instantiate<GameObject>(prefab);
-            Debug.Log($"CreateMap1111");
             _mapModel = mapObj.GetOrAddComponent<MapModel>();
             _mapModel.Init(map);
             CenterPos = mapObj.transform.position;

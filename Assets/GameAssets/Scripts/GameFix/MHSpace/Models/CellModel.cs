@@ -156,7 +156,7 @@ namespace MHSpace
             }
 
             _tex.Apply();
-
+            PlayerMgr.Instance.AddMoney(MapCtrl.Instance.MapConfig.erasePrice);
             if (isIncenter && !_isDeath)
             {
                 _isDeath = true;
@@ -257,7 +257,7 @@ namespace MHSpace
 
         private void OnDestroy()
         {
-            EventDispatcher.Instance.AddListener(EnumEventType.Event_Cell_EraseMask, EraseMask);
+            EventDispatcher.Instance.RemoveListener(EnumEventType.Event_Cell_EraseMask, EraseMask);
         }
     }
 }

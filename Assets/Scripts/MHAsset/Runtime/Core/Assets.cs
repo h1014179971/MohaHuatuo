@@ -562,6 +562,27 @@ namespace libx
         private static string GetPlatformName()
         {
             // ReSharper disable once SwitchStatementMissingSomeCases
+#if UNITY_EDITOR
+            switch (UnityEditor.EditorUserBuildSettings.activeBuildTarget)
+            {
+                case UnityEditor.BuildTarget.Android:
+                    return "Android";
+                case UnityEditor.BuildTarget.iOS:
+                    return "iOS";
+                case UnityEditor.BuildTarget.WebGL:
+                    return "WebGL";
+                case UnityEditor.BuildTarget.StandaloneWindows:
+                case UnityEditor.BuildTarget.StandaloneWindows64:
+                    return "Windows";
+                case UnityEditor.BuildTarget.StandaloneOSX:
+                case UnityEditor.BuildTarget.StandaloneOSXIntel:
+                    return "OSX";
+                default:
+                    return null;
+            }
+
+
+#else
             switch (Application.platform)
             {
                 case RuntimePlatform.Android:
@@ -579,6 +600,8 @@ namespace libx
                 default:
                     return null;
             }
+#endif
+
         }
     }
 }

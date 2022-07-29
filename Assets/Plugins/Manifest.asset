@@ -18,6 +18,7 @@ MonoBehaviour:
   - Assets/GameAssets/JsonData
   - Assets/GameAssets/Prefabs/Basics
   - Assets/GameAssets/Prefabs/Maps
+  - Assets/GameAssets/Prefabs/UI
   - Assets/GameAssets/Textures/Cells
   assets:
   - name: GameFix.dll.bytes
@@ -38,46 +39,204 @@ MonoBehaviour:
   - name: Map.json
     bundle: 1
     dir: 1
+  - name: PowerInfo.json
+    bundle: 1
+    dir: 1
+  - name: UnitConvert.json
+    bundle: 1
+    dir: 1
   - name: auto.prefab
     bundle: 2
     dir: 2
   - name: Map.prefab
     bundle: 3
     dir: 3
-  - name: circle_0.png
+  - name: UICanvas.prefab
     bundle: 4
     dir: 4
-  - name: circle_2.png
+  - name: UIGamePage.prefab
     bundle: 5
     dir: 4
+  - name: boss1.png
+    bundle: 6
+    dir: 5
+  - name: boss2.png
+    bundle: 7
+    dir: 5
+  - name: boss3.png
+    bundle: 8
+    dir: 5
+  - name: boss4.png
+    bundle: 9
+    dir: 5
+  - name: boss5.png
+    bundle: 10
+    dir: 5
+  - name: boss6.png
+    bundle: 11
+    dir: 5
+  - name: circle_0.png
+    bundle: 12
+    dir: 5
+  - name: circle_1.png
+    bundle: 13
+    dir: 5
+  - name: circle_10.png
+    bundle: 14
+    dir: 5
+  - name: circle_2.png
+    bundle: 15
+    dir: 5
+  - name: circle_3.png
+    bundle: 16
+    dir: 5
+  - name: circle_4.png
+    bundle: 17
+    dir: 5
+  - name: circle_5.png
+    bundle: 18
+    dir: 5
+  - name: circle_6.png
+    bundle: 19
+    dir: 5
+  - name: circle_7.png
+    bundle: 20
+    dir: 5
+  - name: circle_8.png
+    bundle: 21
+    dir: 5
+  - name: circle_9.png
+    bundle: 22
+    dir: 5
+  - name: green.png
+    bundle: 23
+    dir: 5
+  - name: star.png
+    bundle: 24
+    dir: 5
   bundles:
   - name: assets/gameassets/dlls.unity3d
     id: 0
     deps: 
-    len: 3366821
-    hash: 286a5f72254c4a255be40812b5bcf65d
+    len: 3413908
+    hash: f20bbddd77a283c5f99bee96a9bc11f2
   - name: assets/gameassets/jsondata.unity3d
     id: 1
     deps: 
-    len: 2813
-    hash: d4cd74770b58f8fa05b8ffc3dc02d169
+    len: 20288
+    hash: 00b785034c9cc805f4d4c31609c53e7c
   - name: assets/gameassets/prefabs/basics/auto.prefab.unity3d
     id: 2
     deps: 
-    len: 8060
-    hash: 170b1b50376b561c5e3aa73057741469
+    len: 8066
+    hash: c7f36cd75cedf72bb3e5e61f1a93162f
   - name: assets/gameassets/prefabs/maps/map.prefab.unity3d
     id: 3
     deps: 
-    len: 5780
-    hash: 752a3b6980222f72c599e5b78c6ef9cb
-  - name: assets/gameassets/textures/cells/circle_0.png.unity3d
+    len: 88090
+    hash: c63b17078385732beb70caea3cf9794f
+  - name: assets/gameassets/prefabs/ui/uicanvas.prefab.unity3d
     id: 4
     deps: 
-    len: 3949
-    hash: 314b5604e4385bed1ee6a9fea7148e7a
-  - name: assets/gameassets/textures/cells/circle_2.png.unity3d
+    len: 5290
+    hash: 144b8f5e7f6f4a6071df20118e54d1b0
+  - name: assets/gameassets/prefabs/ui/uigamepage.prefab.unity3d
     id: 5
     deps: 
-    len: 39805
-    hash: 56b9a0d8f72cdd5cfdb98edac0943fe6
+    len: 84733
+    hash: 8d00d2e30848936457d59e1e3488c768
+  - name: assets/gameassets/textures/cells/boss1.png.unity3d
+    id: 6
+    deps: 
+    len: 41705
+    hash: d6addfd427ac9f9a088d5523da599caf
+  - name: assets/gameassets/textures/cells/boss2.png.unity3d
+    id: 7
+    deps: 
+    len: 30554
+    hash: 171d369bd7e135a20087629dc239a235
+  - name: assets/gameassets/textures/cells/boss3.png.unity3d
+    id: 8
+    deps: 
+    len: 25255
+    hash: 9cdc3bfebea61c66490fe701bae2a145
+  - name: assets/gameassets/textures/cells/boss4.png.unity3d
+    id: 9
+    deps: 
+    len: 27624
+    hash: d0dce257e61d706f8d4af09ea4fa4ace
+  - name: assets/gameassets/textures/cells/boss5.png.unity3d
+    id: 10
+    deps: 
+    len: 45523
+    hash: 9b97d1f74ae642b6da8038073b59e981
+  - name: assets/gameassets/textures/cells/boss6.png.unity3d
+    id: 11
+    deps: 
+    len: 33267
+    hash: 38959f451d4ff9eafe4acd89d8dd5fc5
+  - name: assets/gameassets/textures/cells/circle_0.png.unity3d
+    id: 12
+    deps: 
+    len: 3958
+    hash: 7733c0b8b94d77a30519f47f9a7927de
+  - name: assets/gameassets/textures/cells/circle_1.png.unity3d
+    id: 13
+    deps: 
+    len: 11206
+    hash: 4ba0805975e24c10997b797bce151808
+  - name: assets/gameassets/textures/cells/circle_10.png.unity3d
+    id: 14
+    deps: 
+    len: 23387
+    hash: e8e32890bda9e3ed23bc7b2510e9b5fe
+  - name: assets/gameassets/textures/cells/circle_2.png.unity3d
+    id: 15
+    deps: 
+    len: 24940
+    hash: e02fbec43dccb28aa879f469b3a5d552
+  - name: assets/gameassets/textures/cells/circle_3.png.unity3d
+    id: 16
+    deps: 
+    len: 26970
+    hash: f6772842095de262e63351b054f9e395
+  - name: assets/gameassets/textures/cells/circle_4.png.unity3d
+    id: 17
+    deps: 
+    len: 32271
+    hash: 7971541de2a4141ae2bfc888d04d59d2
+  - name: assets/gameassets/textures/cells/circle_5.png.unity3d
+    id: 18
+    deps: 
+    len: 20995
+    hash: 9d9f87b88c8e443758e8b06e33a77073
+  - name: assets/gameassets/textures/cells/circle_6.png.unity3d
+    id: 19
+    deps: 
+    len: 25458
+    hash: 2a9912181851b3d35d7e03500d3f0093
+  - name: assets/gameassets/textures/cells/circle_7.png.unity3d
+    id: 20
+    deps: 
+    len: 23616
+    hash: af02fa0daf56a5b5f398c94ad17ca735
+  - name: assets/gameassets/textures/cells/circle_8.png.unity3d
+    id: 21
+    deps: 
+    len: 22801
+    hash: 9bfb6599b14e02437407b8b99262a990
+  - name: assets/gameassets/textures/cells/circle_9.png.unity3d
+    id: 22
+    deps: 
+    len: 22719
+    hash: ebd3c4079090b40bcc7934d43a021029
+  - name: assets/gameassets/textures/cells/green.png.unity3d
+    id: 23
+    deps: 
+    len: 10513
+    hash: fa827dfb7fbee014c321749b3f87f3a1
+  - name: assets/gameassets/textures/cells/star.png.unity3d
+    id: 24
+    deps: 
+    len: 41162
+    hash: 449b703c50c3e013b144a535d37ce0ab

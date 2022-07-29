@@ -20,6 +20,8 @@ namespace HybridCLR.Generators
             return new List<Type>
             {
                 typeof(Action<int, string, Vector3>),
+                typeof(libx.AssetLoader),
+                typeof(FullSerializer.fsSerializer),
                 //typeof(Foundation.TextureScaleThread),
                 //typeof(EventArgsThree<Vector3,float,System.Action>)
             };
@@ -35,6 +37,8 @@ namespace HybridCLR.Generators
             return new List<string>
             {
                 "vi8i8",
+                "i1i8S16i8i1",
+                "i1i8i8S32i1",
                 "i1i8S8vf4i1",
             };
         }
@@ -49,7 +53,6 @@ namespace HybridCLR.Generators
             return new List<string>
             {
                 "vi4i4",
-                "i1i8S8vf4i1",
             };
         }
     }

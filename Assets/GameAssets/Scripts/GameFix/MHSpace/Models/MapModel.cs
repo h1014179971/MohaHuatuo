@@ -22,7 +22,6 @@ namespace MHSpace
         {
             _map = map;
             Texture2D bigTex = LoadSprite();
-            Debug.Log($"LoadCenter");
             Texture2D centerTex = LoadCenter();
             bigTex = TextureScale.ComplexTwoTextures(bigTex, centerTex, false);
             GameObject obj = new GameObject();
@@ -69,13 +68,12 @@ namespace MHSpace
             //Texture2D tex = TextureScale.ScaleTextureBilinear(sprite, (int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul));
             Texture2D tex = TextureScaleThread.Bilinear(sprite, (int)(sprite.width * scaleMul), (int)(sprite.height * scaleMul), hexColor);
             return tex;
-
             
         }
         IEnumerator WaitDrawMap()
         {
             yield return new WaitForEndOfFrame();
-            //EventDispatcher.Instance.TriggerEvent(new BaseEventArgs(EnumEventType.Event_Game_Start));
+            EventDispatcher.Instance.TriggerEvent(new BaseEventArgs(EnumEventType.Event_Game_Start));
             BgAnimation();
             CellsAnimation();
         }

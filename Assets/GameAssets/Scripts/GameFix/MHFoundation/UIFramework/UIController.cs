@@ -23,18 +23,11 @@ namespace UIFramework
                     GameObject uiCanvas = GameObject.Find(UIName.UICanvas);
                     if (uiCanvas == null)
                     {
-                        GameObject pageObj = Resources.Load<GameObject>(UIPrefabPath.UI_CANVAS);
-                        if(pageObj == null)
-                        {
-
-                        }
-                        else
-                        {
-                            uiCanvas = Instantiate(Resources.Load<GameObject>(UIPrefabPath.UI_CANVAS));
-                            uiCanvas.name = UIName.UICanvas;
-                            _Instance = uiCanvas.GetOrAddComponent<UIController>();
-                            DontDestroyOnLoad(_Instance);
-                        }
+                        GameObject pageObj = libx.AssetLoader.Load<GameObject>(UIName.UICanvas + ".prefab");
+                        uiCanvas = Instantiate(pageObj);
+                        uiCanvas.name = UIName.UICanvas;
+                        _Instance = uiCanvas.GetOrAddComponent<UIController>();
+                        DontDestroyOnLoad(_Instance);
                         
                     }
                     else
@@ -290,10 +283,12 @@ namespace UIFramework
                 target = _UIContent.transform;
             }
 
-            T p = Instantiate(panelObj, target).GetComponent<T>();
+            GameObject obj = GameObject.Instantiate(panelObj, target);
+            T p = obj.GetComponent<T>();
             if (p == null)
             {
-                DebugUtil.Error(string.Format("Component [{0}] not find.", typeof(T).Name));
+                p = obj.GetOrAddComponent<T>();
+                Debug.LogError(string.Format("Component [{0}] not find.", typeof(T).Name));
             }
             return p;
         }
@@ -330,7 +325,6 @@ namespace UIFramework
             {
                 AssetRequest request = Assets.LoadAsset(assetName,typeof(GameObject));
                 GameObject pageObj = request.asset as GameObject;
-                    
                 if (pageObj)
                 {
                     if (_CurrentPage)
@@ -341,12 +335,13 @@ namespace UIFramework
                     _CurrentPage.request = request;
                     _PageTypeList.Add(typeof(T));
                     _PageDict.Add(typeof(T), _CurrentPage);
+                    _CurrentPage.Init(args);
                     _CurrentPage.Open();
                     return _CurrentPage as T;
                 }
                 else
                 {
-                    DebugUtil.Error("Prefab NO FOUND! Path:" + assetName);
+                    Debug.LogError("Prefab NO FOUND! Path:" + assetName);
                     return null;
                 }
             }

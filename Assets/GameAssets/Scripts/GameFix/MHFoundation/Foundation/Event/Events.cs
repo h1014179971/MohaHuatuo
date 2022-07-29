@@ -4,9 +4,12 @@
 public enum EnumEventType
 {
     None,
+    Event_Load_PlayerData, //玩家数据加载完成
     Event_Asset_Init,//资源初始化后，开始游戏
+    Event_Game_Start,//游戏开始
     Event_Game_Next,//下一关
     Event_Cell_EraseMask,
+    Event_Player_Money,
 
     EventTypeEnd
 }

@@ -1,0 +1,4202 @@
+[
+  {
+    "type": "power",
+    "lv": 1.0,
+    "num": 0.1,
+    "price": "132",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 2.0,
+    "num": 0.2,
+    "price": "139",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 3.0,
+    "num": 0.3,
+    "price": "146",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 4.0,
+    "num": 0.4,
+    "price": "154",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 5.0,
+    "num": 0.5,
+    "price": "162",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 6.0,
+    "num": 0.6,
+    "price": "170",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 7.0,
+    "num": 0.7,
+    "price": "178",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 8.0,
+    "num": 0.8,
+    "price": "186",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 9.0,
+    "num": 0.9,
+    "price": "194",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 10.0,
+    "num": 1.0,
+    "price": "203",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 11.0,
+    "num": 1.1,
+    "price": "212",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 12.0,
+    "num": 1.2,
+    "price": "221",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 13.0,
+    "num": 1.3,
+    "price": "230",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 14.0,
+    "num": 1.4,
+    "price": "239",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 15.0,
+    "num": 1.5,
+    "price": "249",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 16.0,
+    "num": 1.6,
+    "price": "259",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 17.0,
+    "num": 1.7,
+    "price": "269",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 18.0,
+    "num": 1.8,
+    "price": "279",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 19.0,
+    "num": 1.9,
+    "price": "290",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 20.0,
+    "num": 2.0,
+    "price": "301",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 21.0,
+    "num": 2.1,
+    "price": "312",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 22.0,
+    "num": 2.2,
+    "price": "323",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 23.0,
+    "num": 2.3,
+    "price": "335",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 24.0,
+    "num": 2.4,
+    "price": "347",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 25.0,
+    "num": 2.5,
+    "price": "359",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 26.0,
+    "num": 2.6,
+    "price": "371",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 27.0,
+    "num": 2.7,
+    "price": "384",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 28.0,
+    "num": 2.8,
+    "price": "397",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 29.0,
+    "num": 2.9,
+    "price": "410",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 30.0,
+    "num": 3.0,
+    "price": "423",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 31.0,
+    "num": 3.1,
+    "price": "437",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 32.0,
+    "num": 3.2,
+    "price": "451",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 33.0,
+    "num": 3.3,
+    "price": "465",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 34.0,
+    "num": 3.4,
+    "price": "480",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 35.0,
+    "num": 3.5,
+    "price": "495",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 36.0,
+    "num": 3.6,
+    "price": "510",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 37.0,
+    "num": 3.7,
+    "price": "526",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 38.0,
+    "num": 3.8,
+    "price": "542",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 39.0,
+    "num": 3.9,
+    "price": "558",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 40.0,
+    "num": 4.0,
+    "price": "575",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 41.0,
+    "num": 4.1,
+    "price": "592",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 42.0,
+    "num": 4.2,
+    "price": "609",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 43.0,
+    "num": 4.3,
+    "price": "627",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 44.0,
+    "num": 4.4,
+    "price": "645",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 45.0,
+    "num": 4.5,
+    "price": "664",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 46.0,
+    "num": 4.6,
+    "price": "683",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 47.0,
+    "num": 4.7,
+    "price": "702",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 48.0,
+    "num": 4.8,
+    "price": "722",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 49.0,
+    "num": 4.9,
+    "price": "742",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 50.0,
+    "num": 5.0,
+    "price": "763",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 51.0,
+    "num": 5.1,
+    "price": "784",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 52.0,
+    "num": 5.2,
+    "price": "806",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 53.0,
+    "num": 5.3,
+    "price": "828",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 54.0,
+    "num": 5.4,
+    "price": "851",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 55.0,
+    "num": 5.5,
+    "price": "874",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 56.0,
+    "num": 5.6,
+    "price": "898",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 57.0,
+    "num": 5.7,
+    "price": "922",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 58.0,
+    "num": 5.8,
+    "price": "947",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 59.0,
+    "num": 5.9,
+    "price": "972",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 60.0,
+    "num": 6.0,
+    "price": "998",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 61.0,
+    "num": 6.1,
+    "price": "1024",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 62.0,
+    "num": 6.2,
+    "price": "1051",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 63.0,
+    "num": 6.3,
+    "price": "1079",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 64.0,
+    "num": 6.4,
+    "price": "1107",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 65.0,
+    "num": 6.5,
+    "price": "1136",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 66.0,
+    "num": 6.6,
+    "price": "1166",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 67.0,
+    "num": 6.7,
+    "price": "1196",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 68.0,
+    "num": 6.8,
+    "price": "1227",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 69.0,
+    "num": 6.9,
+    "price": "1259",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 70.0,
+    "num": 7.0,
+    "price": "1291",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 71.0,
+    "num": 7.1,
+    "price": "1324",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 72.0,
+    "num": 7.2,
+    "price": "1358",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 73.0,
+    "num": 7.3,
+    "price": "1392",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 74.0,
+    "num": 7.4,
+    "price": "1427",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 75.0,
+    "num": 7.5,
+    "price": "1463",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 76.0,
+    "num": 7.6,
+    "price": "1500",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 77.0,
+    "num": 7.7,
+    "price": "1538",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 78.0,
+    "num": 7.8,
+    "price": "1576",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 79.0,
+    "num": 7.9,
+    "price": "1615",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 80.0,
+    "num": 8.0,
+    "price": "1655",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 81.0,
+    "num": 8.1,
+    "price": "1696",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 82.0,
+    "num": 8.2,
+    "price": "1738",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 83.0,
+    "num": 8.3,
+    "price": "1781",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 84.0,
+    "num": 8.4,
+    "price": "1825",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 85.0,
+    "num": 8.5,
+    "price": "1870",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 86.0,
+    "num": 8.6,
+    "price": "1916",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 87.0,
+    "num": 8.7,
+    "price": "1963",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 88.0,
+    "num": 8.8,
+    "price": "2011",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 89.0,
+    "num": 8.9,
+    "price": "2060",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 90.0,
+    "num": 9.0,
+    "price": "2110",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 91.0,
+    "num": 9.1,
+    "price": "2161",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 92.0,
+    "num": 9.2,
+    "price": "2213",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 93.0,
+    "num": 9.3,
+    "price": "2266",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 94.0,
+    "num": 9.4,
+    "price": "2321",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 95.0,
+    "num": 9.5,
+    "price": "2377",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 96.0,
+    "num": 9.6,
+    "price": "2434",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 97.0,
+    "num": 9.7,
+    "price": "2492",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 98.0,
+    "num": 9.8,
+    "price": "2552",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 99.0,
+    "num": 9.9,
+    "price": "2613",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 100.0,
+    "num": 10.0,
+    "price": "2675",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 101.0,
+    "num": 10.1,
+    "price": "2739",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 102.0,
+    "num": 10.2,
+    "price": "2804",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 103.0,
+    "num": 10.3,
+    "price": "2870",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 104.0,
+    "num": 10.4,
+    "price": "2938",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 105.0,
+    "num": 10.5,
+    "price": "3007",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 106.0,
+    "num": 10.6,
+    "price": "3078",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 107.0,
+    "num": 10.7,
+    "price": "3151",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 108.0,
+    "num": 10.8,
+    "price": "3225",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 109.0,
+    "num": 10.9,
+    "price": "3301",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 110.0,
+    "num": 11.0,
+    "price": "3378",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 111.0,
+    "num": 11.1,
+    "price": "3457",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 112.0,
+    "num": 11.2,
+    "price": "3538",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 113.0,
+    "num": 11.3,
+    "price": "3621",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 114.0,
+    "num": 11.4,
+    "price": "3706",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 115.0,
+    "num": 11.5,
+    "price": "3792",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 116.0,
+    "num": 11.6,
+    "price": "3880",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 117.0,
+    "num": 11.7,
+    "price": "3970",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 118.0,
+    "num": 11.8,
+    "price": "4062",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 119.0,
+    "num": 11.9,
+    "price": "4156",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 120.0,
+    "num": 12.0,
+    "price": "4252",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 121.0,
+    "num": 12.1,
+    "price": "4351",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 122.0,
+    "num": 12.2,
+    "price": "4452",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 123.0,
+    "num": 12.3,
+    "price": "4555",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 124.0,
+    "num": 12.4,
+    "price": "4660",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 125.0,
+    "num": 12.5,
+    "price": "4768",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 126.0,
+    "num": 12.6,
+    "price": "4878",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 127.0,
+    "num": 12.7,
+    "price": "4990",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 128.0,
+    "num": 12.8,
+    "price": "5105",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 129.0,
+    "num": 12.9,
+    "price": "5222",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 130.0,
+    "num": 13.0,
+    "price": "5342",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 131.0,
+    "num": 13.1,
+    "price": "5465",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 132.0,
+    "num": 13.2,
+    "price": "5590",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 133.0,
+    "num": 13.3,
+    "price": "5718",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 134.0,
+    "num": 13.4,
+    "price": "5849",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 135.0,
+    "num": 13.5,
+    "price": "5983",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 136.0,
+    "num": 13.6,
+    "price": "6120",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 137.0,
+    "num": 13.7,
+    "price": "6260",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 138.0,
+    "num": 13.8,
+    "price": "6403",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 139.0,
+    "num": 13.9,
+    "price": "6549",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 140.0,
+    "num": 14.0,
+    "price": "6698",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 141.0,
+    "num": 14.1,
+    "price": "6851",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 142.0,
+    "num": 14.2,
+    "price": "7007",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 143.0,
+    "num": 14.3,
+    "price": "7167",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 144.0,
+    "num": 14.4,
+    "price": "7330",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 145.0,
+    "num": 14.5,
+    "price": "7497",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 146.0,
+    "num": 14.6,
+    "price": "7667",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 147.0,
+    "num": 14.7,
+    "price": "7841",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 148.0,
+    "num": 14.8,
+    "price": "8019",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 149.0,
+    "num": 14.9,
+    "price": "8201",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 150.0,
+    "num": 15.0,
+    "price": "8387",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 151.0,
+    "num": 15.1,
+    "price": "8577",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 152.0,
+    "num": 15.2,
+    "price": "8771",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 153.0,
+    "num": 15.3,
+    "price": "8970",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 154.0,
+    "num": 15.4,
+    "price": "9173",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 155.0,
+    "num": 15.5,
+    "price": "9381",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 156.0,
+    "num": 15.6,
+    "price": "9593",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 157.0,
+    "num": 15.7,
+    "price": "9810",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 158.0,
+    "num": 15.8,
+    "price": "10032",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 159.0,
+    "num": 15.9,
+    "price": "10259",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 160.0,
+    "num": 16.0,
+    "price": "10491",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 161.0,
+    "num": 16.1,
+    "price": "10728",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 162.0,
+    "num": 16.2,
+    "price": "10970",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 163.0,
+    "num": 16.3,
+    "price": "11217",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 164.0,
+    "num": 16.4,
+    "price": "11470",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 165.0,
+    "num": 16.5,
+    "price": "11728",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 166.0,
+    "num": 16.6,
+    "price": "11992",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 167.0,
+    "num": 16.7,
+    "price": "12262",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 168.0,
+    "num": 16.8,
+    "price": "12538",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 169.0,
+    "num": 16.9,
+    "price": "12820",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 170.0,
+    "num": 17.0,
+    "price": "13108",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 171.0,
+    "num": 17.1,
+    "price": "13403",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 172.0,
+    "num": 17.2,
+    "price": "13704",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 173.0,
+    "num": 17.3,
+    "price": "14012",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 174.0,
+    "num": 17.4,
+    "price": "14327",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 175.0,
+    "num": 17.5,
+    "price": "14649",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 176.0,
+    "num": 17.6,
+    "price": "14978",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 177.0,
+    "num": 17.7,
+    "price": "15314",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 178.0,
+    "num": 17.8,
+    "price": "15658",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 179.0,
+    "num": 17.9,
+    "price": "16009",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 180.0,
+    "num": 18.0,
+    "price": "16368",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 181.0,
+    "num": 18.1,
+    "price": "16735",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 182.0,
+    "num": 18.2,
+    "price": "17110",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 183.0,
+    "num": 18.3,
+    "price": "17493",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 184.0,
+    "num": 18.4,
+    "price": "17885",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 185.0,
+    "num": 18.5,
+    "price": "18285",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 186.0,
+    "num": 18.6,
+    "price": "18694",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 187.0,
+    "num": 18.7,
+    "price": "19112",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 188.0,
+    "num": 18.8,
+    "price": "19540",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 189.0,
+    "num": 18.9,
+    "price": "19977",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 190.0,
+    "num": 19.0,
+    "price": "20424",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 191.0,
+    "num": 19.1,
+    "price": "20881",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 192.0,
+    "num": 19.2,
+    "price": "21348",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 193.0,
+    "num": 19.3,
+    "price": "21825",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 194.0,
+    "num": 19.4,
+    "price": "22313",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 195.0,
+    "num": 19.5,
+    "price": "22811",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 196.0,
+    "num": 19.6,
+    "price": "23320",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 197.0,
+    "num": 19.7,
+    "price": "23841",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 198.0,
+    "num": 19.8,
+    "price": "24373",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 199.0,
+    "num": 19.9,
+    "price": "24917",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 200.0,
+    "num": 20.0,
+    "price": "25473",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 201.0,
+    "num": 20.1,
+    "price": "26029",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 202.0,
+    "num": 20.2,
+    "price": "26585",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 203.0,
+    "num": 20.3,
+    "price": "27141",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 204.0,
+    "num": 20.4,
+    "price": "27697",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 205.0,
+    "num": 20.5,
+    "price": "28253",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 206.0,
+    "num": 20.6,
+    "price": "28809",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 207.0,
+    "num": 20.7,
+    "price": "29365",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 208.0,
+    "num": 20.8,
+    "price": "29921",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 209.0,
+    "num": 20.9,
+    "price": "30477",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 210.0,
+    "num": 21.0,
+    "price": "31033",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 211.0,
+    "num": 21.1,
+    "price": "31589",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 212.0,
+    "num": 21.2,
+    "price": "32145",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 213.0,
+    "num": 21.3,
+    "price": "32701",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 214.0,
+    "num": 21.4,
+    "price": "33257",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 215.0,
+    "num": 21.5,
+    "price": "33813",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 216.0,
+    "num": 21.6,
+    "price": "34369",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 217.0,
+    "num": 21.7,
+    "price": "34925",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 218.0,
+    "num": 21.8,
+    "price": "35481",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 219.0,
+    "num": 21.9,
+    "price": "36037",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 220.0,
+    "num": 22.0,
+    "price": "36593",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 221.0,
+    "num": 22.1,
+    "price": "37149",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 222.0,
+    "num": 22.2,
+    "price": "37705",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 223.0,
+    "num": 22.3,
+    "price": "38261",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 224.0,
+    "num": 22.4,
+    "price": "38817",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 225.0,
+    "num": 22.5,
+    "price": "39373",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 226.0,
+    "num": 22.6,
+    "price": "39929",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 227.0,
+    "num": 22.7,
+    "price": "40485",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 228.0,
+    "num": 22.8,
+    "price": "41041",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 229.0,
+    "num": 22.9,
+    "price": "41597",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 230.0,
+    "num": 23.0,
+    "price": "42153",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 231.0,
+    "num": 23.1,
+    "price": "42709",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 232.0,
+    "num": 23.2,
+    "price": "43265",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 233.0,
+    "num": 23.3,
+    "price": "43821",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 234.0,
+    "num": 23.4,
+    "price": "44377",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 235.0,
+    "num": 23.5,
+    "price": "44933",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 236.0,
+    "num": 23.6,
+    "price": "45489",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 237.0,
+    "num": 23.7,
+    "price": "46045",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 238.0,
+    "num": 23.8,
+    "price": "46601",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 239.0,
+    "num": 23.9,
+    "price": "47157",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 240.0,
+    "num": 24.0,
+    "price": "47713",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 241.0,
+    "num": 24.1,
+    "price": "48269",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 242.0,
+    "num": 24.2,
+    "price": "48825",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 243.0,
+    "num": 24.3,
+    "price": "49381",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 244.0,
+    "num": 24.4,
+    "price": "49937",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 245.0,
+    "num": 24.5,
+    "price": "50493",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 246.0,
+    "num": 24.6,
+    "price": "51049",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 247.0,
+    "num": 24.7,
+    "price": "51605",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 248.0,
+    "num": 24.8,
+    "price": "52161",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 249.0,
+    "num": 24.9,
+    "price": "52717",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 250.0,
+    "num": 25.0,
+    "price": "53273",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 251.0,
+    "num": 25.1,
+    "price": "53829",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 252.0,
+    "num": 25.2,
+    "price": "54385",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 253.0,
+    "num": 25.3,
+    "price": "54941",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 254.0,
+    "num": 25.4,
+    "price": "55497",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 255.0,
+    "num": 25.5,
+    "price": "56053",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 256.0,
+    "num": 25.6,
+    "price": "56609",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 257.0,
+    "num": 25.7,
+    "price": "57165",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 258.0,
+    "num": 25.8,
+    "price": "57721",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 259.0,
+    "num": 25.9,
+    "price": "58277",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 260.0,
+    "num": 26.0,
+    "price": "58833",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 261.0,
+    "num": 26.1,
+    "price": "59389",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 262.0,
+    "num": 26.2,
+    "price": "59945",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 263.0,
+    "num": 26.3,
+    "price": "60501",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 264.0,
+    "num": 26.4,
+    "price": "61057",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 265.0,
+    "num": 26.5,
+    "price": "61613",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 266.0,
+    "num": 26.6,
+    "price": "62169",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 267.0,
+    "num": 26.7,
+    "price": "62725",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 268.0,
+    "num": 26.8,
+    "price": "63281",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 269.0,
+    "num": 26.9,
+    "price": "63837",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 270.0,
+    "num": 27.0,
+    "price": "64393",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 271.0,
+    "num": 27.1,
+    "price": "64949",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 272.0,
+    "num": 27.2,
+    "price": "65505",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 273.0,
+    "num": 27.3,
+    "price": "66061",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 274.0,
+    "num": 27.4,
+    "price": "66617",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 275.0,
+    "num": 27.5,
+    "price": "67173",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 276.0,
+    "num": 27.6,
+    "price": "67729",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 277.0,
+    "num": 27.7,
+    "price": "68285",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 278.0,
+    "num": 27.8,
+    "price": "68841",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 279.0,
+    "num": 27.9,
+    "price": "69397",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 280.0,
+    "num": 28.0,
+    "price": "69953",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 281.0,
+    "num": 28.1,
+    "price": "70509",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 282.0,
+    "num": 28.2,
+    "price": "71065",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 283.0,
+    "num": 28.3,
+    "price": "71621",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 284.0,
+    "num": 28.4,
+    "price": "72177",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 285.0,
+    "num": 28.5,
+    "price": "72733",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 286.0,
+    "num": 28.6,
+    "price": "73289",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 287.0,
+    "num": 28.7,
+    "price": "73845",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 288.0,
+    "num": 28.8,
+    "price": "74401",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 289.0,
+    "num": 28.9,
+    "price": "74957",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 290.0,
+    "num": 29.0,
+    "price": "75513",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 291.0,
+    "num": 29.1,
+    "price": "76069",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 292.0,
+    "num": 29.2,
+    "price": "76625",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 293.0,
+    "num": 29.3,
+    "price": "77181",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 294.0,
+    "num": 29.4,
+    "price": "77737",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 295.0,
+    "num": 29.5,
+    "price": "78293",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 296.0,
+    "num": 29.6,
+    "price": "78849",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 297.0,
+    "num": 29.7,
+    "price": "79405",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 298.0,
+    "num": 29.8,
+    "price": "79961",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 299.0,
+    "num": 29.9,
+    "price": "80517",
+    "nameId": 125.0
+  },
+  {
+    "type": "power",
+    "lv": 300.0,
+    "num": 30.0,
+    "price": "81073",
+    "nameId": 125.0
+  },
+  {
+    "type": "interval",
+    "lv": 1.0,
+    "num": 0.002,
+    "price": "132",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 2.0,
+    "num": 0.004,
+    "price": "139",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 3.0,
+    "num": 0.006,
+    "price": "146",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 4.0,
+    "num": 0.008,
+    "price": "154",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 5.0,
+    "num": 0.01,
+    "price": "162",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 6.0,
+    "num": 0.012,
+    "price": "170",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 7.0,
+    "num": 0.014,
+    "price": "178",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 8.0,
+    "num": 0.016,
+    "price": "186",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 9.0,
+    "num": 0.018,
+    "price": "194",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 10.0,
+    "num": 0.02,
+    "price": "203",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 11.0,
+    "num": 0.022,
+    "price": "212",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 12.0,
+    "num": 0.024,
+    "price": "221",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 13.0,
+    "num": 0.026,
+    "price": "230",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 14.0,
+    "num": 0.028,
+    "price": "239",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 15.0,
+    "num": 0.03,
+    "price": "249",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 16.0,
+    "num": 0.032,
+    "price": "259",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 17.0,
+    "num": 0.034,
+    "price": "269",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 18.0,
+    "num": 0.036,
+    "price": "279",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 19.0,
+    "num": 0.038,
+    "price": "290",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 20.0,
+    "num": 0.04,
+    "price": "301",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 21.0,
+    "num": 0.042,
+    "price": "312",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 22.0,
+    "num": 0.044,
+    "price": "323",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 23.0,
+    "num": 0.046,
+    "price": "335",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 24.0,
+    "num": 0.048,
+    "price": "347",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 25.0,
+    "num": 0.05,
+    "price": "359",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 26.0,
+    "num": 0.052,
+    "price": "371",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 27.0,
+    "num": 0.054,
+    "price": "384",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 28.0,
+    "num": 0.056,
+    "price": "397",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 29.0,
+    "num": 0.058,
+    "price": "410",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 30.0,
+    "num": 0.06,
+    "price": "423",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 31.0,
+    "num": 0.062,
+    "price": "437",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 32.0,
+    "num": 0.064,
+    "price": "451",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 33.0,
+    "num": 0.066,
+    "price": "465",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 34.0,
+    "num": 0.068,
+    "price": "480",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 35.0,
+    "num": 0.07,
+    "price": "495",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 36.0,
+    "num": 0.072,
+    "price": "510",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 37.0,
+    "num": 0.074,
+    "price": "526",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 38.0,
+    "num": 0.076,
+    "price": "542",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 39.0,
+    "num": 0.078,
+    "price": "558",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 40.0,
+    "num": 0.08,
+    "price": "575",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 41.0,
+    "num": 0.082,
+    "price": "592",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 42.0,
+    "num": 0.084,
+    "price": "609",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 43.0,
+    "num": 0.086,
+    "price": "627",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 44.0,
+    "num": 0.088,
+    "price": "645",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 45.0,
+    "num": 0.09,
+    "price": "664",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 46.0,
+    "num": 0.092,
+    "price": "683",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 47.0,
+    "num": 0.094,
+    "price": "702",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 48.0,
+    "num": 0.096,
+    "price": "722",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 49.0,
+    "num": 0.098,
+    "price": "742",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 50.0,
+    "num": 0.1,
+    "price": "763",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 51.0,
+    "num": 0.102,
+    "price": "784",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 52.0,
+    "num": 0.104,
+    "price": "806",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 53.0,
+    "num": 0.106,
+    "price": "828",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 54.0,
+    "num": 0.108,
+    "price": "851",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 55.0,
+    "num": 0.11,
+    "price": "874",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 56.0,
+    "num": 0.112,
+    "price": "898",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 57.0,
+    "num": 0.114,
+    "price": "922",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 58.0,
+    "num": 0.116,
+    "price": "947",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 59.0,
+    "num": 0.118,
+    "price": "972",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 60.0,
+    "num": 0.12,
+    "price": "998",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 61.0,
+    "num": 0.122,
+    "price": "1024",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 62.0,
+    "num": 0.124,
+    "price": "1051",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 63.0,
+    "num": 0.126,
+    "price": "1079",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 64.0,
+    "num": 0.128,
+    "price": "1107",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 65.0,
+    "num": 0.13,
+    "price": "1136",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 66.0,
+    "num": 0.132,
+    "price": "1166",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 67.0,
+    "num": 0.134,
+    "price": "1196",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 68.0,
+    "num": 0.136,
+    "price": "1227",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 69.0,
+    "num": 0.138,
+    "price": "1259",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 70.0,
+    "num": 0.14,
+    "price": "1291",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 71.0,
+    "num": 0.142,
+    "price": "1324",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 72.0,
+    "num": 0.144,
+    "price": "1358",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 73.0,
+    "num": 0.146,
+    "price": "1392",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 74.0,
+    "num": 0.148,
+    "price": "1427",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 75.0,
+    "num": 0.15,
+    "price": "1463",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 76.0,
+    "num": 0.152,
+    "price": "1500",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 77.0,
+    "num": 0.154,
+    "price": "1538",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 78.0,
+    "num": 0.156,
+    "price": "1576",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 79.0,
+    "num": 0.158,
+    "price": "1615",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 80.0,
+    "num": 0.16,
+    "price": "1655",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 81.0,
+    "num": 0.162,
+    "price": "1696",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 82.0,
+    "num": 0.164,
+    "price": "1738",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 83.0,
+    "num": 0.166,
+    "price": "1781",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 84.0,
+    "num": 0.168,
+    "price": "1825",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 85.0,
+    "num": 0.17,
+    "price": "1870",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 86.0,
+    "num": 0.172,
+    "price": "1916",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 87.0,
+    "num": 0.174,
+    "price": "1963",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 88.0,
+    "num": 0.176,
+    "price": "2011",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 89.0,
+    "num": 0.178,
+    "price": "2060",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 90.0,
+    "num": 0.18,
+    "price": "2110",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 91.0,
+    "num": 0.182,
+    "price": "2161",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 92.0,
+    "num": 0.184,
+    "price": "2213",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 93.0,
+    "num": 0.186,
+    "price": "2266",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 94.0,
+    "num": 0.188,
+    "price": "2321",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 95.0,
+    "num": 0.19,
+    "price": "2377",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 96.0,
+    "num": 0.192,
+    "price": "2434",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 97.0,
+    "num": 0.194,
+    "price": "2492",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 98.0,
+    "num": 0.196,
+    "price": "2552",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 99.0,
+    "num": 0.198,
+    "price": "2613",
+    "nameId": 92.0
+  },
+  {
+    "type": "interval",
+    "lv": 100.0,
+    "num": 0.2,
+    "price": "2675",
+    "nameId": 92.0
+  },
+  {
+    "type": "gravity",
+    "lv": 1.0,
+    "num": 0.04,
+    "price": "132",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 2.0,
+    "num": 0.08,
+    "price": "139",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 3.0,
+    "num": 0.12,
+    "price": "146",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 4.0,
+    "num": 0.16,
+    "price": "154",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 5.0,
+    "num": 0.2,
+    "price": "162",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 6.0,
+    "num": 0.24,
+    "price": "170",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 7.0,
+    "num": 0.28,
+    "price": "178",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 8.0,
+    "num": 0.32,
+    "price": "186",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 9.0,
+    "num": 0.36,
+    "price": "194",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 10.0,
+    "num": 0.4,
+    "price": "203",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 11.0,
+    "num": 0.44,
+    "price": "212",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 12.0,
+    "num": 0.48,
+    "price": "221",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 13.0,
+    "num": 0.52,
+    "price": "230",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 14.0,
+    "num": 0.56,
+    "price": "239",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 15.0,
+    "num": 0.6,
+    "price": "249",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 16.0,
+    "num": 0.64,
+    "price": "259",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 17.0,
+    "num": 0.68,
+    "price": "269",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 18.0,
+    "num": 0.72,
+    "price": "279",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 19.0,
+    "num": 0.76,
+    "price": "290",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 20.0,
+    "num": 0.8,
+    "price": "301",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 21.0,
+    "num": 0.84,
+    "price": "312",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 22.0,
+    "num": 0.88,
+    "price": "323",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 23.0,
+    "num": 0.92,
+    "price": "335",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 24.0,
+    "num": 0.96,
+    "price": "347",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 25.0,
+    "num": 1.0,
+    "price": "359",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 26.0,
+    "num": 1.04,
+    "price": "371",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 27.0,
+    "num": 1.08,
+    "price": "384",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 28.0,
+    "num": 1.12,
+    "price": "397",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 29.0,
+    "num": 1.16,
+    "price": "410",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 30.0,
+    "num": 1.2,
+    "price": "423",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 31.0,
+    "num": 1.24,
+    "price": "437",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 32.0,
+    "num": 1.28,
+    "price": "451",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 33.0,
+    "num": 1.32,
+    "price": "465",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 34.0,
+    "num": 1.36,
+    "price": "480",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 35.0,
+    "num": 1.4,
+    "price": "495",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 36.0,
+    "num": 1.44,
+    "price": "510",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 37.0,
+    "num": 1.48,
+    "price": "526",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 38.0,
+    "num": 1.52,
+    "price": "542",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 39.0,
+    "num": 1.56,
+    "price": "558",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 40.0,
+    "num": 1.6,
+    "price": "575",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 41.0,
+    "num": 1.64,
+    "price": "592",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 42.0,
+    "num": 1.68,
+    "price": "609",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 43.0,
+    "num": 1.72,
+    "price": "627",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 44.0,
+    "num": 1.76,
+    "price": "645",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 45.0,
+    "num": 1.8,
+    "price": "664",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 46.0,
+    "num": 1.84,
+    "price": "683",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 47.0,
+    "num": 1.88,
+    "price": "702",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 48.0,
+    "num": 1.92,
+    "price": "722",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 49.0,
+    "num": 1.96,
+    "price": "742",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 50.0,
+    "num": 2.0,
+    "price": "763",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 51.0,
+    "num": 2.04,
+    "price": "784",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 52.0,
+    "num": 2.08,
+    "price": "806",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 53.0,
+    "num": 2.12,
+    "price": "828",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 54.0,
+    "num": 2.16,
+    "price": "851",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 55.0,
+    "num": 2.2,
+    "price": "874",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 56.0,
+    "num": 2.24,
+    "price": "898",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 57.0,
+    "num": 2.28,
+    "price": "922",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 58.0,
+    "num": 2.32,
+    "price": "947",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 59.0,
+    "num": 2.36,
+    "price": "972",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 60.0,
+    "num": 2.4,
+    "price": "998",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 61.0,
+    "num": 2.44,
+    "price": "1024",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 62.0,
+    "num": 2.48,
+    "price": "1051",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 63.0,
+    "num": 2.52,
+    "price": "1079",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 64.0,
+    "num": 2.56,
+    "price": "1107",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 65.0,
+    "num": 2.6,
+    "price": "1136",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 66.0,
+    "num": 2.64,
+    "price": "1166",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 67.0,
+    "num": 2.68,
+    "price": "1196",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 68.0,
+    "num": 2.72,
+    "price": "1227",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 69.0,
+    "num": 2.76,
+    "price": "1259",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 70.0,
+    "num": 2.8,
+    "price": "1291",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 71.0,
+    "num": 2.84,
+    "price": "1324",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 72.0,
+    "num": 2.88,
+    "price": "1358",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 73.0,
+    "num": 2.92,
+    "price": "1392",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 74.0,
+    "num": 2.96,
+    "price": "1427",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 75.0,
+    "num": 3.0,
+    "price": "1463",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 76.0,
+    "num": 3.04,
+    "price": "1500",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 77.0,
+    "num": 3.08,
+    "price": "1538",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 78.0,
+    "num": 3.12,
+    "price": "1576",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 79.0,
+    "num": 3.16,
+    "price": "1615",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 80.0,
+    "num": 3.2,
+    "price": "1655",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 81.0,
+    "num": 3.24,
+    "price": "1696",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 82.0,
+    "num": 3.28,
+    "price": "1738",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 83.0,
+    "num": 3.32,
+    "price": "1781",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 84.0,
+    "num": 3.36,
+    "price": "1825",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 85.0,
+    "num": 3.4,
+    "price": "1870",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 86.0,
+    "num": 3.44,
+    "price": "1916",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 87.0,
+    "num": 3.48,
+    "price": "1963",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 88.0,
+    "num": 3.52,
+    "price": "2011",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 89.0,
+    "num": 3.56,
+    "price": "2060",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 90.0,
+    "num": 3.6,
+    "price": "2110",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 91.0,
+    "num": 3.64,
+    "price": "2161",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 92.0,
+    "num": 3.68,
+    "price": "2213",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 93.0,
+    "num": 3.72,
+    "price": "2266",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 94.0,
+    "num": 3.76,
+    "price": "2321",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 95.0,
+    "num": 3.8,
+    "price": "2377",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 96.0,
+    "num": 3.84,
+    "price": "2434",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 97.0,
+    "num": 3.88,
+    "price": "2492",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 98.0,
+    "num": 3.92,
+    "price": "2552",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 99.0,
+    "num": 3.96,
+    "price": "2613",
+    "nameId": 126.0
+  },
+  {
+    "type": "gravity",
+    "lv": 100.0,
+    "num": 4.0,
+    "price": "2675",
+    "nameId": 126.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 1.0,
+    "num": 0.02,
+    "price": "132",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 2.0,
+    "num": 0.04,
+    "price": "139",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 3.0,
+    "num": 0.06,
+    "price": "146",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 4.0,
+    "num": 0.08,
+    "price": "154",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 5.0,
+    "num": 0.1,
+    "price": "162",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 6.0,
+    "num": 0.12,
+    "price": "170",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 7.0,
+    "num": 0.14,
+    "price": "178",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 8.0,
+    "num": 0.16,
+    "price": "186",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 9.0,
+    "num": 0.18,
+    "price": "194",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 10.0,
+    "num": 0.2,
+    "price": "203",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 11.0,
+    "num": 0.22,
+    "price": "212",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 12.0,
+    "num": 0.24,
+    "price": "221",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 13.0,
+    "num": 0.26,
+    "price": "230",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 14.0,
+    "num": 0.28,
+    "price": "239",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 15.0,
+    "num": 0.3,
+    "price": "249",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 16.0,
+    "num": 0.32,
+    "price": "259",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 17.0,
+    "num": 0.34,
+    "price": "269",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 18.0,
+    "num": 0.36,
+    "price": "279",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 19.0,
+    "num": 0.38,
+    "price": "290",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 20.0,
+    "num": 0.4,
+    "price": "301",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 21.0,
+    "num": 0.42,
+    "price": "312",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 22.0,
+    "num": 0.44,
+    "price": "323",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 23.0,
+    "num": 0.46,
+    "price": "335",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 24.0,
+    "num": 0.48,
+    "price": "347",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 25.0,
+    "num": 0.5,
+    "price": "359",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 26.0,
+    "num": 0.52,
+    "price": "371",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 27.0,
+    "num": 0.54,
+    "price": "384",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 28.0,
+    "num": 0.56,
+    "price": "397",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 29.0,
+    "num": 0.58,
+    "price": "410",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 30.0,
+    "num": 0.6,
+    "price": "423",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 31.0,
+    "num": 0.62,
+    "price": "437",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 32.0,
+    "num": 0.64,
+    "price": "451",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 33.0,
+    "num": 0.66,
+    "price": "465",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 34.0,
+    "num": 0.68,
+    "price": "480",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 35.0,
+    "num": 0.7,
+    "price": "495",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 36.0,
+    "num": 0.72,
+    "price": "510",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 37.0,
+    "num": 0.74,
+    "price": "526",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 38.0,
+    "num": 0.76,
+    "price": "542",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 39.0,
+    "num": 0.78,
+    "price": "558",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 40.0,
+    "num": 0.8,
+    "price": "575",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 41.0,
+    "num": 0.82,
+    "price": "592",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 42.0,
+    "num": 0.84,
+    "price": "609",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 43.0,
+    "num": 0.86,
+    "price": "627",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 44.0,
+    "num": 0.88,
+    "price": "645",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 45.0,
+    "num": 0.9,
+    "price": "664",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 46.0,
+    "num": 0.92,
+    "price": "683",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 47.0,
+    "num": 0.94,
+    "price": "702",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 48.0,
+    "num": 0.96,
+    "price": "722",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 49.0,
+    "num": 0.98,
+    "price": "742",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 50.0,
+    "num": 1.0,
+    "price": "763",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 51.0,
+    "num": 1.02,
+    "price": "784",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 52.0,
+    "num": 1.04,
+    "price": "806",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 53.0,
+    "num": 1.06,
+    "price": "828",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 54.0,
+    "num": 1.08,
+    "price": "851",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 55.0,
+    "num": 1.1,
+    "price": "874",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 56.0,
+    "num": 1.12,
+    "price": "898",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 57.0,
+    "num": 1.14,
+    "price": "922",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 58.0,
+    "num": 1.16,
+    "price": "947",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 59.0,
+    "num": 1.18,
+    "price": "972",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 60.0,
+    "num": 1.2,
+    "price": "998",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 61.0,
+    "num": 1.22,
+    "price": "1024",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 62.0,
+    "num": 1.24,
+    "price": "1051",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 63.0,
+    "num": 1.26,
+    "price": "1079",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 64.0,
+    "num": 1.28,
+    "price": "1107",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 65.0,
+    "num": 1.3,
+    "price": "1136",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 66.0,
+    "num": 1.32,
+    "price": "1166",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 67.0,
+    "num": 1.34,
+    "price": "1196",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 68.0,
+    "num": 1.36,
+    "price": "1227",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 69.0,
+    "num": 1.38,
+    "price": "1259",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 70.0,
+    "num": 1.4,
+    "price": "1291",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 71.0,
+    "num": 1.42,
+    "price": "1324",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 72.0,
+    "num": 1.44,
+    "price": "1358",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 73.0,
+    "num": 1.46,
+    "price": "1392",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 74.0,
+    "num": 1.48,
+    "price": "1427",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 75.0,
+    "num": 1.5,
+    "price": "1463",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 76.0,
+    "num": 1.52,
+    "price": "1500",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 77.0,
+    "num": 1.54,
+    "price": "1538",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 78.0,
+    "num": 1.56,
+    "price": "1576",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 79.0,
+    "num": 1.58,
+    "price": "1615",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 80.0,
+    "num": 1.6,
+    "price": "1655",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 81.0,
+    "num": 1.62,
+    "price": "1696",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 82.0,
+    "num": 1.64,
+    "price": "1738",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 83.0,
+    "num": 1.66,
+    "price": "1781",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 84.0,
+    "num": 1.68,
+    "price": "1825",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 85.0,
+    "num": 1.7,
+    "price": "1870",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 86.0,
+    "num": 1.72,
+    "price": "1916",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 87.0,
+    "num": 1.74,
+    "price": "1963",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 88.0,
+    "num": 1.76,
+    "price": "2011",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 89.0,
+    "num": 1.78,
+    "price": "2060",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 90.0,
+    "num": 1.8,
+    "price": "2110",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 91.0,
+    "num": 1.82,
+    "price": "2161",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 92.0,
+    "num": 1.84,
+    "price": "2213",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 93.0,
+    "num": 1.86,
+    "price": "2266",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 94.0,
+    "num": 1.88,
+    "price": "2321",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 95.0,
+    "num": 1.9,
+    "price": "2377",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 96.0,
+    "num": 1.92,
+    "price": "2434",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 97.0,
+    "num": 1.94,
+    "price": "2492",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 98.0,
+    "num": 1.96,
+    "price": "2552",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 99.0,
+    "num": 1.98,
+    "price": "2613",
+    "nameId": 127.0
+  },
+  {
+    "type": "accuracy",
+    "lv": 100.0,
+    "num": 2.0,
+    "price": "2675",
+    "nameId": 127.0
+  }
+]

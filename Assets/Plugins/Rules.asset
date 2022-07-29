@@ -20,7 +20,7 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 39
+  version: 75
   scenesInBuild:
   - {fileID: 102900000, guid: f63ac38a2cd34d5458980c51ad55fbb8, type: 3}
   rules:
@@ -44,6 +44,10 @@ MonoBehaviour:
     searchPattern: '*.prefab'
     nameBy: 1
     assetBundleName: 
+  - searchPath: Assets/GameAssets/Prefabs/UI
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
   ruleAssets:
   - bundle: assets/gameassets/dlls.unity3d
     path: Assets/GameAssets/Dlls/GameFix.dll.bytes
@@ -57,14 +61,56 @@ MonoBehaviour:
     path: Assets/GameAssets/JsonData/BallAuto.json
   - bundle: assets/gameassets/jsondata.unity3d
     path: Assets/GameAssets/JsonData/Map.json
+  - bundle: assets/gameassets/jsondata.unity3d
+    path: Assets/GameAssets/JsonData/PowerInfo.json
+  - bundle: assets/gameassets/jsondata.unity3d
+    path: Assets/GameAssets/JsonData/UnitConvert.json
   - bundle: assets/gameassets/prefabs/basics/auto.prefab.unity3d
     path: Assets/GameAssets/Prefabs/Basics/auto.prefab
   - bundle: assets/gameassets/prefabs/maps/map.prefab.unity3d
     path: Assets/GameAssets/Prefabs/Maps/Map.prefab
+  - bundle: assets/gameassets/prefabs/ui/uicanvas.prefab.unity3d
+    path: Assets/GameAssets/Prefabs/UI/UICanvas.prefab
+  - bundle: assets/gameassets/prefabs/ui/uigamepage.prefab.unity3d
+    path: Assets/GameAssets/Prefabs/UI/UIGamePage.prefab
+  - bundle: assets/gameassets/textures/cells/boss1.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/boss1.png
+  - bundle: assets/gameassets/textures/cells/boss2.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/boss2.png
+  - bundle: assets/gameassets/textures/cells/boss3.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/boss3.png
+  - bundle: assets/gameassets/textures/cells/boss4.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/boss4.png
+  - bundle: assets/gameassets/textures/cells/boss5.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/boss5.png
+  - bundle: assets/gameassets/textures/cells/boss6.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/boss6.png
   - bundle: assets/gameassets/textures/cells/circle_0.png.unity3d
     path: Assets/GameAssets/Textures/Cells/circle_0.png
+  - bundle: assets/gameassets/textures/cells/circle_1.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_1.png
+  - bundle: assets/gameassets/textures/cells/circle_10.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_10.png
   - bundle: assets/gameassets/textures/cells/circle_2.png.unity3d
     path: Assets/GameAssets/Textures/Cells/circle_2.png
+  - bundle: assets/gameassets/textures/cells/circle_3.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_3.png
+  - bundle: assets/gameassets/textures/cells/circle_4.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_4.png
+  - bundle: assets/gameassets/textures/cells/circle_5.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_5.png
+  - bundle: assets/gameassets/textures/cells/circle_6.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_6.png
+  - bundle: assets/gameassets/textures/cells/circle_7.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_7.png
+  - bundle: assets/gameassets/textures/cells/circle_8.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_8.png
+  - bundle: assets/gameassets/textures/cells/circle_9.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/circle_9.png
+  - bundle: assets/gameassets/textures/cells/green.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/green.png
+  - bundle: assets/gameassets/textures/cells/star.png.unity3d
+    path: Assets/GameAssets/Textures/Cells/star.png
   ruleBundles:
   - name: assets/gameassets/dlls.unity3d
     assets:
@@ -76,15 +122,74 @@ MonoBehaviour:
     assets:
     - Assets/GameAssets/JsonData/BallAuto.json
     - Assets/GameAssets/JsonData/Map.json
+    - Assets/GameAssets/JsonData/PowerInfo.json
+    - Assets/GameAssets/JsonData/UnitConvert.json
+  - name: assets/gameassets/textures/cells/boss1.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/boss1.png
+  - name: assets/gameassets/textures/cells/boss2.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/boss2.png
+  - name: assets/gameassets/textures/cells/boss3.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/boss3.png
+  - name: assets/gameassets/textures/cells/boss4.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/boss4.png
+  - name: assets/gameassets/textures/cells/boss5.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/boss5.png
+  - name: assets/gameassets/textures/cells/boss6.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/boss6.png
   - name: assets/gameassets/textures/cells/circle_0.png.unity3d
     assets:
     - Assets/GameAssets/Textures/Cells/circle_0.png
+  - name: assets/gameassets/textures/cells/circle_1.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_1.png
+  - name: assets/gameassets/textures/cells/circle_10.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_10.png
   - name: assets/gameassets/textures/cells/circle_2.png.unity3d
     assets:
     - Assets/GameAssets/Textures/Cells/circle_2.png
+  - name: assets/gameassets/textures/cells/circle_3.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_3.png
+  - name: assets/gameassets/textures/cells/circle_4.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_4.png
+  - name: assets/gameassets/textures/cells/circle_5.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_5.png
+  - name: assets/gameassets/textures/cells/circle_6.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_6.png
+  - name: assets/gameassets/textures/cells/circle_7.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_7.png
+  - name: assets/gameassets/textures/cells/circle_8.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_8.png
+  - name: assets/gameassets/textures/cells/circle_9.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/circle_9.png
+  - name: assets/gameassets/textures/cells/green.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/green.png
+  - name: assets/gameassets/textures/cells/star.png.unity3d
+    assets:
+    - Assets/GameAssets/Textures/Cells/star.png
   - name: assets/gameassets/prefabs/maps/map.prefab.unity3d
     assets:
     - Assets/GameAssets/Prefabs/Maps/Map.prefab
   - name: assets/gameassets/prefabs/basics/auto.prefab.unity3d
     assets:
     - Assets/GameAssets/Prefabs/Basics/auto.prefab
+  - name: assets/gameassets/prefabs/ui/uicanvas.prefab.unity3d
+    assets:
+    - Assets/GameAssets/Prefabs/UI/UICanvas.prefab
+  - name: assets/gameassets/prefabs/ui/uigamepage.prefab.unity3d
+    assets:
+    - Assets/GameAssets/Prefabs/UI/UIGamePage.prefab

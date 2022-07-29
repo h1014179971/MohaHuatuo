@@ -71,7 +71,6 @@ namespace UIFramework
             {
                 _WindowRoot = this.transform;
             }
-
             InitPage(args);
         }
         public override void Open()

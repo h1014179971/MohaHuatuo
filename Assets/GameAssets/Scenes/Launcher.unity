@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Skin: {fileID: 0}
-  m_ActiveWindow: 2
+  m_ActiveWindow: 1
   m_ShowFullWindow: 1
   m_ConsoleWindow:
     m_LockScroll: 1

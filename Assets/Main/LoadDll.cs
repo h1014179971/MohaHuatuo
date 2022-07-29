@@ -16,11 +16,12 @@ public class LoadDll : MonoBehaviour
                 "mscorlib.dll",
                 "System.dll",
                 "System.Core.dll",// 如果使用了Linq，需要这个
+                //"DOTween.dll",
                 // "Newtonsoft.Json.dll",
                 // "protobuf-net.dll",
                 // "Google.Protobuf.dll",
                 // "MongoDB.Bson.dll",
-                // "DOTween.Modules.dll",
+                //"DOTween.Modules.dll",
                 // "UniTask.dll",
             };
     private void Awake()
@@ -43,8 +44,6 @@ public class LoadDll : MonoBehaviour
         {
             aotDllBytes[i] = AssetLoader.Load(aotDlls[i] + ".bytes", typeof(TextAsset)) as TextAsset;
         }
-        //TextAsset dllBytes1 = AssetLoader.Load("Foundation.dll.bytes", typeof(TextAsset)) as TextAsset;
-        //System.Reflection.Assembly.Load(dllBytes1.bytes);
         TextAsset gamefixDll = AssetLoader.Load("GameFix.dll.bytes", typeof(TextAsset)) as TextAsset;
         gameAss = Assembly.Load(gamefixDll.bytes);
 #else
@@ -57,14 +56,12 @@ public class LoadDll : MonoBehaviour
             {
                 aotDllBytes[i] = AssetLoader.Load(aotDlls[i] + ".bytes", typeof(TextAsset)) as TextAsset;
             }
-            //TextAsset dllBytes1 = AssetLoader.Load("Foundation.dll.bytes", typeof(TextAsset)) as TextAsset;
-            //System.Reflection.Assembly.Load(dllBytes1.bytes);
             TextAsset gamefixDll = AssetLoader.Load("GameFix.dll.bytes", typeof(TextAsset)) as TextAsset;
             gameAss = Assembly.Load(gamefixDll.bytes);
         }
 #endif
     }
-
+    
     public void RunMain()
     {
         Debug.Log($"RunMain");

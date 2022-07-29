@@ -15,7 +15,6 @@ namespace MHSpace
         private int _minMapId;
         public override void Init()
         {
-            Debug.Log($"MapMgr Init");
             ReadFile();
         }
 
@@ -27,7 +26,6 @@ namespace MHSpace
             _allMaps = maps;
             _maxMapId = _allMaps.Max(t => t.id);
             _minMapId = _allMaps.Min(t => t.id); 
-            Debug.Log($"ReadFile333:{_allMaps.Count}");
         }
 
         public int GetMaxId()
