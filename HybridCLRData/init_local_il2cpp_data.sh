@@ -3,18 +3,21 @@
 # 设置默认分支为2020.3.33，避免很多人忘了切分支
 IL2CPP_BRANCH=2020.3.33
 
+rm -rf hybridclr_repo
 # clone huatuo仓库,国内推荐用 gitee
 # git clone https://github.com/focus-creative-games/hybridclr
 git clone --depth=1 https://gitee.com/focus-creative-games/hybridclr hybridclr_repo
 
+rm -rf il2cpp_plus_repo
 # git clone https://github.com/focus-creative-games/il2cpp_plus
 git clone --depth=1 -b $IL2CPP_BRANCH https://gitee.com/focus-creative-games/il2cpp_plus il2cpp_plus_repo
 
 
 # 请修改为你所用Unity的il2cpp目录
-# 一般像这样 C:\Program Files\Unity\Hub\Editor\2020.3.33f1c2\Editor\Data\il2cpp
-
-IL2CPP_PATH='/c/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/il2cpp'
+# 一般像这样 
+# C:\Program Files\Unity\Hub\Editor\2020.3.33f1c2\Editor\Data\il2cpp
+# /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/il2cpp
+IL2CPP_PATH='/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/il2cpp'
 
 if [ ! -d "$IL2CPP_PATH" ] ; then
     echo "你未指定正确的il2cpp路径"

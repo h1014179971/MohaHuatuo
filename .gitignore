@@ -32,3 +32,5 @@ Temp/
 Logs/
 obj/
 DLC/
+.vs/
+HybridCLRData/iOSBuild/build/

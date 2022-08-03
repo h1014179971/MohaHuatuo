@@ -5,27 +5,27 @@ using UnityEditor;
 using System.IO;
 using HybridCLR;
 
-namespace Huatuo
+namespace HybridCLR
 {
     public class CopeDll2Assets 
     {
-        [MenuItem("HybridCLR/¸´ÖÆDll/ActiveBuildTarget")]
+        [MenuItem("HybridCLR/å¤åˆ¶Dll/ActiveBuildTarget")]
         static void CopeByActive()
         {
             Copy(EditorUserBuildSettings.activeBuildTarget);
         }
 
-        [MenuItem("HybridCLR/¸´ÖÆDll/StandaloneWindows64")]
+        [MenuItem("HybridCLR/å¤åˆ¶Dll/StandaloneWindows64")]
         static void CopeByStandaloneWindows64()
         {
             Copy(BuildTarget.StandaloneWindows64);
         }
-        [MenuItem("HybridCLR/¸´ÖÆDll/Android")]
+        [MenuItem("HybridCLR/å¤åˆ¶Dll/Android")]
         static void CopeByAndroid()
         {
             Copy(BuildTarget.Android);
         }
-        [MenuItem("HybridCLR/¸´ÖÆDll/IOS")]
+        [MenuItem("HybridCLR/å¤åˆ¶Dll/IOS")]
         static void CopeByIOS()
         {
             Copy(BuildTarget.iOS);
@@ -44,14 +44,14 @@ namespace Huatuo
                 string dllPath = $"{aotDllDir}/{dll}";
                 if (!File.Exists(dllPath))
                 {
-                    Debug.LogError($"abÖĞÌí¼ÓAOT²¹³äÔªÊı¾İdll:{dllPath} Ê±·¢Éú´íÎó,ÎÄ¼ş²»´æÔÚ¡£ĞèÒª¹¹½¨Ò»´ÎÖ÷°üºó²ÅÄÜÉú³É²Ã¼ôºóµÄAOT dll");
+                    Debug.LogError($"abä¸­æ·»åŠ AOTè¡¥å……å…ƒæ•°æ®dll:{dllPath} æ—¶å‘ç”Ÿé”™è¯¯,æ–‡ä»¶ä¸å­˜åœ¨ã€‚éœ€è¦æ„å»ºä¸€æ¬¡ä¸»åŒ…åæ‰èƒ½ç”Ÿæˆè£å‰ªåçš„AOT dll");
                     continue;
                 }
                 string dllBytesPath = $"{exportDir}/{dll}.bytes";
                 File.Copy(dllPath, dllBytesPath, true);
             }
             AssetDatabase.Refresh();
-            Debug.Log("ÈÈ¸üDll¸´ÖÆ³É¹¦£¡");
+            Debug.Log("çƒ­æ›´Dllå¤åˆ¶æˆåŠŸï¼");
         }
     }
 }

@@ -23,7 +23,8 @@ namespace MHSpace
         }
         private void ChangeMoney(BaseEventArgs args)
         {
-            _moneyTxt.text = $"{UnitConvertMgr.Instance.GetFloatValue(PlayerMgr.Instance.Player.money, 2)}";
+            if(_moneyTxt !=null)
+                _moneyTxt.text = $"{UnitConvertMgr.Instance.GetFloatValue(PlayerMgr.Instance.Player.money, 2)}";
         }
         private void OnDestroy()
         {

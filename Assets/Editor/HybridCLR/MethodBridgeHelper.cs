@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEditor;
@@ -24,6 +25,51 @@ namespace HybridCLR
             Directory.Delete(il2cppBuildCachePath, true);
         }
 
+        private static List<Assembly> CollectDependentAssemblies(Dictionary<string, Assembly> allAssByName, List<Assembly> dlls)
+        {
+            for(int i = 0; i < dlls.Count; i++)
+            {
+                Assembly ass = dlls[i];
+                foreach (var depAssName in ass.GetReferencedAssemblies())
+                {
+                    if (!allAssByName.ContainsKey(depAssName.Name))
+                    {
+                        Debug.Log($"ignore ref assembly:{depAssName.Name}");
+                        continue;
+                    }
+                    Assembly depAss = allAssByName[depAssName.Name];
+                    if (!dlls.Contains(depAss))
+                    {
+                        dlls.Add(depAss);
+                    }
+                }
+            }
+            return dlls;
+        }
+
+        private static List<Assembly> GetScanAssembiles()
+        {
+            var allAssByName = new Dictionary<string, Assembly>();
+            foreach(var ass in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                allAssByName[ass.GetName().Name] = ass;
+            }
+            //CompileDllHelper.CompileDllActiveBuildTarget();
+
+            var rootAssemblies = BuildConfig.AllHotUpdateDllNames
+                .Select(dll => Path.GetFileNameWithoutExtension(dll)).Concat(GeneratorConfig.GetExtraAssembiles())
+                .Where(name => allAssByName.ContainsKey(name)).Select(name => allAssByName[name]).ToList();
+            //var rootAssemblies = GeneratorConfig.GetExtraAssembiles()
+            //    .Where(name => allAssByName.ContainsKey(name)).Select(name => allAssByName[name]).ToList();
+            CollectDependentAssemblies(allAssByName, rootAssemblies);
+            rootAssemblies.Sort((a, b) => a.GetName().Name.CompareTo(b.GetName().Name));
+            Debug.Log($"assembly count:{rootAssemblies.Count}");
+            foreach(var ass in rootAssemblies)
+            {
+                Debug.Log($"scan assembly:{ass.GetName().Name}");
+            }
+            return rootAssemblies;
+        }
 
         private static void GenerateMethodBridgeCppFile(CallConventionType platform, string fileName)
         {
@@ -31,7 +77,7 @@ namespace HybridCLR
             var g = new MethodBridgeGenerator(new MethodBridgeGeneratorOptions()
             {
                 CallConvention = platform,
-                Assemblies = AppDomain.CurrentDomain.GetAssemblies().ToList(),
+                Assemblies = GetScanAssembiles(),
                 OutputFile = outputFile,
             });
 
@@ -39,6 +85,12 @@ namespace HybridCLR
             g.Generate();
             Debug.LogFormat("== output:{0} ==", outputFile);
             CleanIl2CppBuildCache();
+        }
+
+        [MenuItem("HybridCLR/MethodBridge/Arm64")]
+        public static void MethodBridge_Arm64()
+        {
+            GenerateMethodBridgeCppFile(CallConventionType.Arm64, "MethodBridge_Arm64");
         }
 
         [MenuItem("HybridCLR/MethodBridge/General64")]

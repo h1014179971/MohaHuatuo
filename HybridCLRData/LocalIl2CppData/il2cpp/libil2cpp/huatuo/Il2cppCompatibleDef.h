@@ -41,12 +41,20 @@
 
 #if	PLATFORM_ARCH_64
 #define HUATUO_ARCH_64 1
+#if IL2CPP_TARGET_ARM64
+#define ARM64_ABI 1
+#define GENERAL_ABI_64 0
+#define HUATUO_ABI_NAME "Arm64"
+#else
 #define GENERAL_ABI_64 1
+#define HUATUO_ABI_NAME "General64"
+#endif
 #define GENERAL_ABI_32 0
 #else
 #define HUATUO_ARCH_64 0
 #define GENERAL_ABI_64 0
 #define GENERAL_ABI_32 1
+#define HUATUO_ABI_NAME "General32"
 #endif
 
 constexpr int PTR_SIZE = IL2CPP_SIZEOF_VOID_P;
@@ -76,6 +84,17 @@ constexpr int PTR_SIZE = IL2CPP_SIZEOF_VOID_P;
 
 namespace huatuo
 {
+	Il2CppMethodPointer InitAndGetInterpreterDirectlyCallMethodPointerSlow(MethodInfo* method);
+
+	inline Il2CppMethodPointer GetInterpreterDirectlyCallMethodPointer(const MethodInfo* method)
+	{
+		Il2CppMethodPointer methodPointer = method->methodPointer;
+		if (methodPointer || method->initInterpCallMethodPointer)
+		{
+			return methodPointer;
+		}
+		return InitAndGetInterpreterDirectlyCallMethodPointerSlow(const_cast<MethodInfo*>(method));
+	}
 
 	inline Il2CppReflectionType* GetReflectionTypeFromName(Il2CppString* name)
 	{
@@ -84,7 +103,7 @@ namespace huatuo
 
 	inline void ConstructDelegate(Il2CppDelegate* delegate, Il2CppObject* target, const MethodInfo* method)
 	{
-		il2cpp::vm::Type::ConstructDelegate(delegate, target, method->methodPointer, method);
+		il2cpp::vm::Type::ConstructDelegate(delegate, target, GetInterpreterDirectlyCallMethodPointer(method), method);
 	}
 
 	inline const MethodInfo* GetGenericVirtualMethod(const MethodInfo* result, const MethodInfo* inflateMethod)
@@ -125,6 +144,17 @@ namespace huatuo
 
 namespace huatuo
 {
+	Il2CppMethodPointer InitAndGetInterpreterDirectlyCallMethodPointerSlow(MethodInfo* method);
+
+	inline Il2CppMethodPointer GetInterpreterDirectlyCallMethodPointer(const MethodInfo* method)
+	{
+		Il2CppMethodPointer methodPointer = method->indirect_call_via_invokers ? method->interpCallMethodPointer : method->methodPointer;
+		if (methodPointer || method->initInterpCallMethodPointer)
+		{
+			return methodPointer;
+		}
+		return InitAndGetInterpreterDirectlyCallMethodPointerSlow(const_cast<MethodInfo*>(method));
+	}
 
 	inline Il2CppReflectionType* GetReflectionTypeFromName(Il2CppString* name)
 	{
@@ -133,7 +163,7 @@ namespace huatuo
 
 	inline void ConstructDelegate(Il2CppDelegate* delegate, Il2CppObject* target, const MethodInfo* method)
 	{
-		il2cpp::vm::Type::ConstructDelegate(delegate, target, method);
+		il2cpp::vm::Type::InvokeDelegateConstructor(delegate, target, method);
 	}
 
 	inline const MethodInfo* GetGenericVirtualMethod(const MethodInfo* result, const MethodInfo* inflateMethod)
