@@ -20,15 +20,21 @@ namespace MHEditor.Build
         static void ShowWindow()
         {
             isReplace = true;
+            LoadData();
             instance = EditorWindow.GetWindow<IosBuildWindow>();
             scrollPos = new Vector2(instance.position.x, instance.position.y + 75);
             instance.Show();
-            LoadData();
+            
         }
         [MenuItem("MHFrameWork/Ios Build/Append", false, 1)]
         static void SetConfig()
         {
             isReplace = false;
+            LoadData();
+            instance = EditorWindow.GetWindow<IosBuildWindow>();
+            scrollPos = new Vector2(instance.position.x, instance.position.y + 75);
+            instance.Show();
+            return;
             string path = EditorUtility.OpenFilePanel("Choice Config", System.Environment.CurrentDirectory, "json");
             Debug.Log($"config path=={path}");
             if (!string.IsNullOrEmpty(path))
@@ -46,10 +52,8 @@ namespace MHEditor.Build
         }
         public static string ConfigPath {
             get {
-                if (isReplace)
-                    return "iOSAdd/" + channel.ToString() + "/XCodeConfig.json";
-                else
-                    return configPath;
+                return "iOSAdd/" + channel.ToString() + "/XCodeConfig.json";
+                
             }
             set { configPath = value; }
         }
@@ -79,11 +83,37 @@ namespace MHEditor.Build
             }
                 
             GUILayout.EndHorizontal();
+            if (!isReplace)
+            {
+                GUILayout.BeginHorizontal();
+                if (GUILayout.Button("UnityXcode Path", GUILayout.Width(150)))
+                {
+                    if (string.IsNullOrEmpty(iosData.iosPath))
+                        iosData.iosPath = EditorUtility.SaveFilePanel("Build Ios", System.Environment.CurrentDirectory, "", "");
+                    else
+                    {
+                        if (Directory.Exists(iosData.iosPath))
+                        {
+                            DirectoryInfo directoryInfo = new DirectoryInfo(iosData.iosPath);
+                            iosData.iosPath = EditorUtility.SaveFilePanel("Build Ios", directoryInfo.Parent.FullName, directoryInfo.Name, "");
+                        }
+                        else
+                            iosData.iosPath = EditorUtility.SaveFilePanel("Build Ios", iosData.iosPath, "", "");
+                    }
+                }
+                if(iosData != null)
+                    EditorGUILayout.TextField("",iosData.iosPath);
+
+                GUILayout.EndHorizontal();
+            }
+            
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("Export Project"))
             {
-                
-                ExportProject();
+                if (isReplace)
+                    ExportProject();
+                else
+                    ExportAppendProject();
             }
             GUILayout.EndHorizontal();
         }
@@ -97,9 +127,9 @@ namespace MHEditor.Build
         {
             Build();
             
-            string path;
+            string path = iosData.iosPath;
             if (string.IsNullOrEmpty(iosData.iosPath))
-                path = EditorUtility.SaveFilePanel("Build Ios", System.Environment.CurrentDirectory, "","");
+                path = EditorUtility.SaveFilePanel("Build Ios", System.Environment.CurrentDirectory, "", "");
             else
             {
                 if (Directory.Exists(iosData.iosPath))
@@ -116,10 +146,36 @@ namespace MHEditor.Build
                 SaveData();
                 if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.iOS)
                     EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, BuildTarget.Android);
-                BuildPipeline.BuildPlayer(GetBuildScenes(), iosData.iosPath, BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);
+                //var options = BuildOptions.AcceptExternalModificationsToPlayer;//指定目录下必须有xcode工程
+                var options = BuildOptions.AllowDebugging;
+                BuildPipeline.BuildPlayer(GetBuildScenes(), iosData.iosPath, BuildTarget.iOS, options);
                 EditorUtility.RevealInFinder(iosData.iosPath);
             }
             
+        }
+        private static void ExportAppendProject()
+        {
+            Build();
+
+            string path = iosData.iosPath;
+            if (!string.IsNullOrEmpty(path))
+            {
+                iosData.iosPath = path;
+                SaveData();
+                if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.iOS)
+                    EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.iOS, BuildTarget.Android);
+                string projPath = UnityEditor.iOS.Xcode.PBXProject.GetPBXProjectPath(path);
+                
+                var options = BuildOptions.AllowDebugging;
+                if(File.Exists(projPath))
+                    options = BuildOptions.AcceptExternalModificationsToPlayer;//指定目录下必须有xcode工程
+                
+                BuildPipeline.BuildPlayer(GetBuildScenes(), iosData.iosPath, BuildTarget.iOS, options);
+                EditorUtility.RevealInFinder(iosData.iosPath);
+            }
+            else
+                Debug.LogError("到处路径为空");
+
         }
         private static string[] GetBuildScenes()
         {

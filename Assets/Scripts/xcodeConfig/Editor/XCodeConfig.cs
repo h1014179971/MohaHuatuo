@@ -36,19 +36,26 @@ public class XCodeConfig : MonoBehaviour {
             string json = File.ReadAllText(cpath);
             Hashtable table = json.hashtableFromJson();
             _table = table;
-            SetTeamId(proj,table.SGet<string>("teamId"));
+            
             //lib
             SetLibs(proj, table.SGet<Hashtable>("libs"));
             //framework
             SetFrameworks(proj, table.SGet<Hashtable>("frameworks"));
-            //building setting
-            SetBuildProperties(proj, table.SGet<Hashtable>("properties"),true);
+            
             //修改代码
             //ReviseClass();
             //复制文件
-            CopyFiles(proj, path, table.SGet<Hashtable>("copyfiles"));
+            CopyFiles(proj, path, table.SGet<Hashtable>("copyfiles"), 2);
+            CopyFiles(proj, path, table.SGet<Hashtable>("copyMainfiles"), 1);
+            CopyFiles(proj, path, table.SGet<Hashtable>("copyMainAndUnityFrameworkfiles"), 3);
+            CopyFiles(proj, path, table.SGet<Hashtable>("copyfilesnotAdd"), 0);
             //复制文件夹
             CopyFolders(proj, path, table.SGet<Hashtable>("folders"));
+            //building setting
+            SetBuildProperties(proj, table.SGet<Hashtable>("mainProperties"), 1);
+            SetBuildProperties(proj, table.SGet<Hashtable>("UnityFrameworkProperties"), 2);
+            SetBuildProperties(proj, table.SGet<Hashtable>("MainAndUnityFrameworkProperties"), 3);
+            SetTeamId(proj, table.SGet<string>("teamId"));
             //删除文件夹
             DeleteFolders(proj, path, table.SGet<ArrayList>("deletefolder"));
             //删除hwads指定文件夹下，某些文件
@@ -56,7 +63,7 @@ public class XCodeConfig : MonoBehaviour {
             //文件编译符号
             //    SetFilesCompileFlag(proj, table.SGet<Hashtable>("filesCompileFlag"));
             //添加 shellscript
-            AddShellScript(proj,table.SGet<ArrayList>("addShellScript"));
+            //AddShellScript(proj,table.SGet<ArrayList>("addShellScript"));
             //写入
             File.WriteAllText(projPath, proj.WriteToString());
             //plist
@@ -74,8 +81,7 @@ public class XCodeConfig : MonoBehaviour {
     }
     private static void SetTeamId(PBXProject proj,string teamId)
     {
-        //string target = proj.TargetGuidByName(PBXProject.GetUnityTargetName());
-        string target = proj.TargetGuidByName(proj.GetUnityMainTargetGuid());
+        string target = proj.GetUnityMainTargetGuid();
         proj.SetTeamId(target,teamId);
     }
     private static void AddLibToProject(PBXProject inst, string targetGuid, string lib) {
@@ -89,7 +95,7 @@ public class XCodeConfig : MonoBehaviour {
     //设置frameworks
     private static void SetFrameworks(PBXProject proj, Hashtable table) {
         if (table!=null) {
-            string target = proj.TargetGuidByName(proj.GetUnityFrameworkTargetGuid());
+            string target = proj.GetUnityFrameworkTargetGuid();
             ArrayList addList = table["+"] as ArrayList;
             if (addList != null) {
                 foreach (string i in addList) {
@@ -111,8 +117,8 @@ public class XCodeConfig : MonoBehaviour {
     //设置libs
     private static void SetLibs(PBXProject proj, Hashtable table) {
         if (table!=null) {
-            string target = proj.TargetGuidByName(proj.GetUnityFrameworkTargetGuid()); 
-           ArrayList addList = table["+"] as ArrayList;
+            string target = proj.GetUnityFrameworkTargetGuid();
+            ArrayList addList = table["+"] as ArrayList;
             if (addList != null) {
                 foreach (string i in addList) {
                     AddLibToProject(proj, target, i);
@@ -127,17 +133,20 @@ public class XCodeConfig : MonoBehaviour {
         }
     }
     //设置编译属性
-    private static void SetBuildProperties(PBXProject proj, Hashtable table,bool mainTarget) {
+    private static void SetBuildProperties(PBXProject proj, Hashtable table,int mainTarget) {
         if (table!=null) {
-            string targetGuid;
-            if (mainTarget)
-                targetGuid = proj.GetUnityMainTargetGuid();
-            else
-                targetGuid = proj.GetUnityFrameworkTargetGuid();
-            string target = proj.TargetGuidByName(targetGuid);
             Hashtable setTable = table.SGet<Hashtable>("=");
             foreach (DictionaryEntry i in setTable) {
-                proj.SetBuildProperty(target, i.Key.ToString(), i.Value.ToString());
+                if(mainTarget == 1)
+                    proj.SetBuildProperty(proj.GetUnityMainTargetGuid(), i.Key.ToString(), i.Value.ToString());
+                else if(mainTarget ==2)
+                    proj.SetBuildProperty(proj.GetUnityFrameworkTargetGuid(), i.Key.ToString(), i.Value.ToString());
+                else if(mainTarget == 3)
+                {
+                    proj.SetBuildProperty(proj.GetUnityMainTargetGuid(), i.Key.ToString(), i.Value.ToString());
+                    proj.SetBuildProperty(proj.GetUnityFrameworkTargetGuid(), i.Key.ToString(), i.Value.ToString());
+                }
+
             }
             Hashtable addTable = table.SGet<Hashtable>("+");
             foreach (DictionaryEntry i in addTable) {
@@ -146,7 +155,15 @@ public class XCodeConfig : MonoBehaviour {
                 foreach (var flag in array) {
                     list.Add(flag.ToString());
                 }
-                proj.UpdateBuildProperty(target, i.Key.ToString(), list, null);
+                if(mainTarget == 1)
+                    proj.UpdateBuildProperty(proj.GetUnityMainTargetGuid(), i.Key.ToString(), list, null);
+                else if(mainTarget == 2)
+                    proj.UpdateBuildProperty(proj.GetUnityFrameworkTargetGuid(), i.Key.ToString(), list, null);
+                else if(mainTarget == 3)
+                {
+                    proj.UpdateBuildProperty(proj.GetUnityMainTargetGuid(), i.Key.ToString(), list, null);
+                    proj.UpdateBuildProperty(proj.GetUnityFrameworkTargetGuid(), i.Key.ToString(), list, null);
+                }
             }
             Hashtable removeTable = table.SGet<Hashtable>("-");
             foreach (DictionaryEntry i in removeTable) {
@@ -155,7 +172,15 @@ public class XCodeConfig : MonoBehaviour {
                 foreach (var flag in array) {
                     list.Add(flag.ToString());
                 }
-                proj.UpdateBuildProperty(target, i.Key.ToString(), null, list);
+                if(mainTarget == 1)
+                    proj.UpdateBuildProperty(proj.GetUnityMainTargetGuid(), i.Key.ToString(), null, list);
+                else if(mainTarget == 2)
+                    proj.UpdateBuildProperty(proj.GetUnityFrameworkTargetGuid(), i.Key.ToString(), null, list);
+                else if(mainTarget == 3)
+                {
+                    proj.UpdateBuildProperty(proj.GetUnityMainTargetGuid(), i.Key.ToString(), null, list);
+                    proj.UpdateBuildProperty(proj.GetUnityFrameworkTargetGuid(), i.Key.ToString(), null, list);
+                }
             }
         }
     }
@@ -239,11 +264,11 @@ public class XCodeConfig : MonoBehaviour {
         }
     }
     //复制文件
-    private static void CopyFiles(PBXProject proj, string xcodePath, Hashtable arg) {
+    private static void CopyFiles(PBXProject proj, string xcodePath, Hashtable arg, int addtarget) {
         foreach (DictionaryEntry i in arg) {
             string src = Path.Combine(System.Environment.CurrentDirectory, i.Key.ToString());
             string des = Path.Combine(xcodePath, i.Value.ToString());
-            CopyFile(proj,xcodePath, src, des);
+            CopyFile(proj,xcodePath, src, des, addtarget);
         }
     }
     //复制文件夹
@@ -255,14 +280,33 @@ public class XCodeConfig : MonoBehaviour {
             AddFolderBuild(proj, xcodePath, i.Value.ToString());
         }
     }
-    private static void CopyFile(PBXProject proj, string xcodePath, string src, string des) {
+    private static void CopyFile(PBXProject proj, string xcodePath, string src, string des, int addtarget) {
         bool needCopy = NeedCopy(src);
         if (needCopy) {
             if (File.Exists(des))
                 File.Delete(des);
             File.Copy(src, des);
-            string target = proj.TargetGuidByName(proj.GetUnityFrameworkTargetGuid());
-            proj.AddFileToBuild(target, proj.AddFile(des, des.Replace(xcodePath + "/", ""), PBXSourceTree.Absolute));
+            if (addtarget == 1)
+            {
+                proj.AddFileToBuild(proj.GetUnityMainTargetGuid(), proj.AddFile(des, des.Replace(xcodePath + "/", ""), PBXSourceTree.Absolute));
+                
+            }
+            else if(addtarget ==2)
+            {
+                proj.AddFileToBuild(proj.GetUnityFrameworkTargetGuid(), proj.AddFile(des, des.Replace(xcodePath + "/", ""), PBXSourceTree.Absolute));
+            }
+            else if(addtarget == 3)
+            {
+                proj.AddFileToBuild(proj.GetUnityMainTargetGuid(), proj.AddFile(des, des.Replace(xcodePath + "/", ""), PBXSourceTree.Absolute));
+                proj.AddFileToBuild(proj.GetUnityFrameworkTargetGuid(), proj.AddFile(des, des.Replace(xcodePath + "/", ""), PBXSourceTree.Absolute));
+            }
+            else if(addtarget == 0)
+            {
+                proj.AddFile(des, des.Replace(xcodePath + "/", ""), PBXSourceTree.Absolute);
+            }
+
+
+                
             AutoAddSearchPath(proj, xcodePath, des);
             Debug.Log("copy file " + src + " -> " + des);
         }
@@ -354,7 +398,7 @@ public class XCodeConfig : MonoBehaviour {
         //获得源文件下所有目录文件
         string currDir = Path.Combine(xcodePath, root);
         if (root.EndsWith(".framework") || root.EndsWith(".bundle")) {
-            string target = proj.TargetGuidByName(proj.GetUnityFrameworkTargetGuid());
+            string target = proj.GetUnityFrameworkTargetGuid();
             Debug.LogFormat("add framework or bundle to build:{0}->{1}", currDir, root);
             string fileGuid = proj.AddFile(currDir, root, PBXSourceTree.Source);
             proj.AddFileToBuild(target, fileGuid);
@@ -367,7 +411,7 @@ public class XCodeConfig : MonoBehaviour {
             string t_path = Path.Combine(currDir, name);
             string t_projPath = Path.Combine(root, name);
             if (folder.EndsWith(".framework") || folder.EndsWith(".bundle")) {
-                string target = proj.TargetGuidByName(proj.GetUnityFrameworkTargetGuid());
+                string target = proj.GetUnityFrameworkTargetGuid();
                 Debug.LogFormat("add framework or bundle to build:{0}->{1}", t_path, t_projPath);
                 string fileGuid = proj.AddFile(t_path, t_projPath, PBXSourceTree.Source);
                 proj.AddFileToBuild(target, fileGuid);
@@ -384,7 +428,7 @@ public class XCodeConfig : MonoBehaviour {
                 string name = Path.GetFileName(file);
                 string t_path = Path.Combine(currDir, name);
                 string t_projPath = Path.Combine(root, name);
-                string target = proj.TargetGuidByName(proj.GetUnityFrameworkTargetGuid());
+                string target = proj.GetUnityFrameworkTargetGuid();
                 string fileGuid = proj.AddFile(t_path, t_projPath, PBXSourceTree.Source);
                 proj.AddFileToBuild(target, fileGuid);
                 AutoAddSearchPath(proj, xcodePath, t_path);
@@ -404,6 +448,18 @@ public class XCodeConfig : MonoBehaviour {
                 if (projPath.Contains(embed))
                 {
                     PBXProjectExtensions.AddFileToEmbedFrameworks(proj, target, fileGuid);
+                }
+            }
+        }
+
+        ArrayList mainEmbeds = _table.SGet<ArrayList>("mainEmbeds");
+        if (mainEmbeds != null)
+        {
+            foreach (string embed in mainEmbeds)
+            {
+                if (projPath.Contains(embed))
+                {
+                    PBXProjectExtensions.AddFileToEmbedFrameworks(proj, proj.GetUnityMainTargetGuid(), fileGuid);
                 }
             }
         }
@@ -436,7 +492,7 @@ public class XCodeConfig : MonoBehaviour {
             var array = new ArrayList();
             array.Add(addStr);
             add.Add("FRAMEWORK_SEARCH_PATHS", array);
-            SetBuildProperties(proj, arg,false);
+            SetBuildProperties(proj, arg,2);
         }
         else if(filePath.EndsWith(".h")){//添加头文件搜索路径
             string addStr = "$PROJECT_DIR" + Path.GetDirectoryName(filePath.Replace(xcodePath, ""));
@@ -448,7 +504,7 @@ public class XCodeConfig : MonoBehaviour {
             var array = new ArrayList();
             array.Add(addStr);
             add.Add("HEADER_SEARCH_PATHS", array);
-            SetBuildProperties(proj, arg,false);
+            SetBuildProperties(proj, arg,2);
         }
         else if (filePath.EndsWith(".a")) {//添加静态库搜索路径
             string addStr = "$PROJECT_DIR" + Path.GetDirectoryName(filePath.Replace(xcodePath, ""));
@@ -460,11 +516,11 @@ public class XCodeConfig : MonoBehaviour {
             var array = new ArrayList();
             array.Add(addStr);
             add.Add("LIBRARY_SEARCH_PATHS", array);
-            SetBuildProperties(proj, arg,false);
+            SetBuildProperties(proj, arg,2);
         }
     }
     private static void SetFilesCompileFlag(PBXProject proj,Hashtable arg) {
-        string target = proj.TargetGuidByName(proj.GetUnityMainTargetGuid());
+        string target = proj.GetUnityMainTargetGuid();
         foreach (DictionaryEntry i in arg) {
             string fileProjPath = i.Key.ToString();
             string fguid = proj.FindFileGuidByProjectPath(fileProjPath);
@@ -487,7 +543,7 @@ public class XCodeConfig : MonoBehaviour {
     // add shell script
     private static void AddShellScript(PBXProject proj, ArrayList arg)
     {
-        string target = proj.TargetGuidByName(proj.GetUnityMainTargetGuid());
+        string target = proj.GetUnityMainTargetGuid();
         if (arg != null)
         {
             foreach (object i in arg)

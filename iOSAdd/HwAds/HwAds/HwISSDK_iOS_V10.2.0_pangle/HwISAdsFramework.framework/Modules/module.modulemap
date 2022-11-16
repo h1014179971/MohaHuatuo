@@ -1,0 +1,6 @@
+framework module HwISAdsFramework {
+  umbrella header "HwISAdsFramework.h"
+
+  export *
+  module * { export * }
+}
